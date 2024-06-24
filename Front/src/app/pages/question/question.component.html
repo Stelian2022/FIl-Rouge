@@ -1,0 +1,21 @@
+<div *ngIf="quiz" class="mx-auto max-w-4xl bg-[#ebf3ff] mt-10 shadow-lg rounded-lg">
+   <h2 class="text-2xl font-bold text-center">{{ quiz.title }}</h2>
+    <div *ngIf="currentQuestionIndex < quiz.questions.length">
+      <div class="text-center">
+        <h3 class="text-xl">{{ quiz.questions[currentQuestionIndex].text }}</h3>
+        <div *ngFor="let option of quiz.questions[currentQuestionIndex].options" class="mt-2">
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox" name="answer" [value]="option" (change)="submitAnswer(quiz.questions[currentQuestionIndex], option)">
+            <span class="ml-2">{{ option }}</span>
+          </label>
+        </div>
+        <textarea class="w-full mt-4 p-2 border" placeholder="Ajoutez un commentaire" (input)="addComment(quiz.questions[currentQuestionIndex], $any($event.target).value)"></textarea>
+      </div>
+      <div class="flex justify-center mt-4">
+        <!-- <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full transition duration-300 ease-in-out" (click)="previousQuestion()" [disabled]="currentQuestionIndex === 0">Précédent</button> -->
+        <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full ml-2 transition duration-300 ease-in-out" (click)="nextQuestion()" [disabled]="currentQuestionIndex === quiz.questions.length - 1">Suivant</button>
+      </div>
+    </div>
+    <button class="bg-green-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full mt-4 mx-auto block transition duration-300 ease-in-out" (click)="completeQuiz()">Terminer le Quiz</button>
+  </div>
+  

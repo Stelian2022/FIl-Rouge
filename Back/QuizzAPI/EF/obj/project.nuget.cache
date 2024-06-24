@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "oOrG5U6Foeg=",
+  "success": true,
+  "projectFilePath": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EF\\EF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\stanc\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
+    "C:\\Users\\stanc\\.nuget\\packages\\jquery\\3.7.1\\jquery.3.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

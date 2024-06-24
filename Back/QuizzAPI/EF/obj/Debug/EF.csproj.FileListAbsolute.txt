@@ -1,0 +1,14 @@
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\bin\Debug\NORTHWND.MDF
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\bin\Debug\NORTHWND_log.ldf
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\bin\Debug\EF.exe.config
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\bin\Debug\EF.exe
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\bin\Debug\EF.pdb
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\bin\Debug\EntityFramework.SqlServer.dll
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\bin\Debug\EntityFramework.dll
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\bin\Debug\fr\EntityFramework.resources.dll
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\obj\Debug\EF.csproj.AssemblyReference.cache
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\obj\Debug\EF.csproj.CoreCompileInputs.cache
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\obj\Debug\EF.csproj.Up2Date
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\obj\Debug\EF.exe
+D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\obj\Debug\EF.pdb
