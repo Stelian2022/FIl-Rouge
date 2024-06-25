@@ -8,7 +8,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
 import { AppComponent } from './app.component';
-import { UserListComponent } from './components/user-list/user-list.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +21,6 @@ import { UserListComponent } from './components/user-list/user-list.component';
     FormsModule,
     HttpClientModule,
     RouterModule,
-    UserListComponent
    
   ],
   providers: [AuthService, AuthGuard],
