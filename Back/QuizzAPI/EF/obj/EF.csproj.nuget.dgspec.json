@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EF\\EF.csproj": {}
+    "C:\\Users\\IB\\Desktop\\projetMut\\FIl-Rouge\\Back\\QuizzAPI\\EF\\EF.csproj": {}
   },
   "projects": {
-    "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EF\\EF.csproj": {
+    "C:\\Users\\IB\\Desktop\\projetMut\\FIl-Rouge\\Back\\QuizzAPI\\EF\\EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EF\\EF.csproj",
+        "projectUniqueName": "C:\\Users\\IB\\Desktop\\projetMut\\FIl-Rouge\\Back\\QuizzAPI\\EF\\EF.csproj",
         "projectName": "EF",
-        "projectPath": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EF\\EF.csproj",
-        "packagesPath": "C:\\Users\\stanc\\.nuget\\packages\\",
-        "outputPath": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EF\\obj\\",
+        "projectPath": "C:\\Users\\IB\\Desktop\\projetMut\\FIl-Rouge\\Back\\QuizzAPI\\EF\\EF.csproj",
+        "packagesPath": "C:\\Users\\IB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IB\\Desktop\\projetMut\\FIl-Rouge\\Back\\QuizzAPI\\EF\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\stanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IB\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,11 +41,11 @@
           "dependencies": {
             "EntityFramework": {
               "target": "Package",
-              "version": "[6.5.1, )"
+              "version": "[6.2.0, )"
             },
-            "jQuery": {
+            "EntityFramework.fr": {
               "target": "Package",
-              "version": "[3.7.1, )"
+              "version": "[6.2.0, )"
             }
           }
         }

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "oOrG5U6Foeg=",
+  "dgSpecHash": "MAj8OkeJ86w=",
   "success": true,
-  "projectFilePath": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EF\\EF.csproj",
+  "projectFilePath": "C:\\Users\\IB\\Desktop\\projetMut\\FIl-Rouge\\Back\\QuizzAPI\\EF\\EF.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\stanc\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
-    "C:\\Users\\stanc\\.nuget\\packages\\jquery\\3.7.1\\jquery.3.7.1.nupkg.sha512"
+    "C:\\Users\\IB\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
+    "C:\\Users\\IB\\.nuget\\packages\\entityframework.fr\\6.2.0\\entityframework.fr.6.2.0.nupkg.sha512"
   ],
   "logs": []
 }

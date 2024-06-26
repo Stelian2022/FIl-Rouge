@@ -1,24 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\IB\\Desktop\\projetMut\\FIl-Rouge\\Back\\QuizzAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B6C406BD-8B77-4FDB-8DDE-200C372C61CA}|EFCrud\\EFCrud.csproj|d:\\www\\fil rouge\\quizzapi\\quizzapi\\efcrud\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B6C406BD-8B77-4FDB-8DDE-200C372C61CA}|EFCrud\\EFCrud.csproj|c:\\users\\ib\\desktop\\projetmut\\fil-rouge\\back\\quizzapi\\efcrud\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6C406BD-8B77-4FDB-8DDE-200C372C61CA}|EFCrud\\EFCrud.csproj|solutionrelative:efcrud\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6C406BD-8B77-4FDB-8DDE-200C372C61CA}|EFCrud\\EFCrud.csproj|D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\efcrud\\data\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B6C406BD-8B77-4FDB-8DDE-200C372C61CA}|EFCrud\\EFCrud.csproj|C:\\Users\\IB\\Desktop\\projetMut\\FIl-Rouge\\Back\\QuizzAPI\\efcrud\\data\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6C406BD-8B77-4FDB-8DDE-200C372C61CA}|EFCrud\\EFCrud.csproj|solutionrelative:efcrud\\data\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6C406BD-8B77-4FDB-8DDE-200C372C61CA}|EFCrud\\EFCrud.csproj|D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\efcrud\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6C406BD-8B77-4FDB-8DDE-200C372C61CA}|EFCrud\\EFCrud.csproj|solutionrelative:efcrud\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|EFCrud||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|EF||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,60 +24,26 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EFCrud\\Controllers\\UserController.cs",
+              "DocumentMoniker": "C:\\Users\\IB\\Desktop\\projetMut\\FIl-Rouge\\Back\\QuizzAPI\\EFCrud\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "EFCrud\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EFCrud\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\IB\\Desktop\\projetMut\\FIl-Rouge\\Back\\QuizzAPI\\EFCrud\\Controllers\\UserController.cs",
               "RelativeToolTip": "EFCrud\\Controllers\\UserController.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAwwEEAAAAAAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAkwFsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T12:09:35.078Z",
+              "WhenOpened": "2024-06-25T13:27:58.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "UserContext.cs",
-              "DocumentMoniker": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EFCrud\\Data\\UserContext.cs",
+              "DocumentMoniker": "C:\\Users\\IB\\Desktop\\projetMut\\FIl-Rouge\\Back\\QuizzAPI\\EFCrud\\Data\\UserContext.cs",
               "RelativeDocumentMoniker": "EFCrud\\Data\\UserContext.cs",
-              "ToolTip": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EFCrud\\Data\\UserContext.cs",
+              "ToolTip": "C:\\Users\\IB\\Desktop\\projetMut\\FIl-Rouge\\Back\\QuizzAPI\\EFCrud\\Data\\UserContext.cs",
               "RelativeToolTip": "EFCrud\\Data\\UserContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T12:03:28.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EFCrud\\Models\\User.cs",
-              "RelativeDocumentMoniker": "EFCrud\\Models\\User.cs",
-              "ToolTip": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EFCrud\\Models\\User.cs",
-              "RelativeToolTip": "EFCrud\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T12:02:37.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EFCrud",
-              "DocumentMoniker": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EFCrud\\EFCrud.csproj",
-              "RelativeDocumentMoniker": "EFCrud\\EFCrud.csproj",
-              "ToolTip": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EFCrud\\EFCrud.csproj",
-              "RelativeToolTip": "EFCrud\\EFCrud.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-21T10:07:50.07Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EF",
-              "DocumentMoniker": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EF\\EF.csproj",
-              "RelativeDocumentMoniker": "EF\\EF.csproj",
-              "ToolTip": "D:\\www\\FIl Rouge\\QuizzAPI\\QuizzAPI\\EF\\EF.csproj*",
-              "RelativeToolTip": "EF\\EF.csproj*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-21T10:07:21.055Z"
             }
           ]
         }

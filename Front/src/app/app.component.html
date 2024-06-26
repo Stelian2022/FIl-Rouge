@@ -12,7 +12,7 @@
       <nav class="mb-4">
         <div class="flex items-center">
           <a routerLink="/" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4">Accueil</a>
-          <a routerLink="/apropos" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4">A propos</a>
+          <!-- <a routerLink="/apropos" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4">A propos</a> -->
           <a routerLink="/contact" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4">Contact</a>
           <a routerLink="/login" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg flex items-center mr-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -22,8 +22,9 @@
             </svg>
             Se connecter
           </a>
-          <li><a routerLink="/users">Users</a></li>
           <a *ngIf="isLoggedIn" (click)="logout()" class="text-red-600 hover:text-red-800 hover:bg-red-100 transition-colors duration-300 py-2 px-4 rounded-lg">Logout</a>
+          <a routerLink="/dashbordAdmin" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4">Admin</a>
+          <a routerLink="/dashbordAgence" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4">Agence</a>
         </div>
       
       </nav>
@@ -31,7 +32,7 @@
   </div>
 </div>
 <router-outlet></router-outlet>
-<footer class="bg-gray-800 text-white py-6">
+<footer class="bg-gray-800 text-white py-6 fixed inset-x-0 bottom-0">
   <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
     <div class="mb-4 md:mb-0">
       <h2 class="text-2xl font-bold">Restez en Contact</h2>

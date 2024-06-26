@@ -12,3 +12,17 @@ D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\obj\Debug\EF.csproj.CoreCompileInputs.cach
 D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\obj\Debug\EF.csproj.Up2Date
 D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\obj\Debug\EF.exe
 D:\www\FIl Rouge\QuizzAPI\QuizzAPI\EF\obj\Debug\EF.pdb
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\bin\Debug\NORTHWND.MDF
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\bin\Debug\NORTHWND_log.ldf
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\bin\Debug\EF.exe.config
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\bin\Debug\EF.exe
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\bin\Debug\EF.pdb
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\bin\Debug\EntityFramework.dll
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\obj\Debug\EF.csproj.AssemblyReference.cache
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\obj\Debug\EF.csproj.CoreCompileInputs.cache
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\obj\Debug\EF.csproj.Up2Date
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\obj\Debug\EF.exe
+C:\Users\IB\Desktop\projetMut\FIl-Rouge\Back\QuizzAPI\EF\obj\Debug\EF.pdb

@@ -8,6 +8,11 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using UserApi.Data;
 using UserApi.Models;
+using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
+using HttpGetAttribute = Microsoft.AspNetCore.Mvc.HttpGetAttribute;
+using HttpPostAttribute = Microsoft.AspNetCore.Mvc.HttpPostAttribute;
+using HttpPutAttribute = Microsoft.AspNetCore.Mvc.HttpPutAttribute;
+using HttpDeleteAttribute = Microsoft.AspNetCore.Mvc.HttpDeleteAttribute;
 
 namespace UserApi.Controllers
 {
