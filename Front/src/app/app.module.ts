@@ -8,8 +8,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
 import { AppComponent } from './app.component';
-import { UserListComponent } from './components/user-list/user-list.component';
 import { CommonModule } from '@angular/common';
+//import { UserListComponent } from './components/user-list/user-list.component';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CommonModule } from '@angular/common';
     UserListComponent,
     CommonModule
    
+
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]

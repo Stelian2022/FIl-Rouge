@@ -5,7 +5,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { QuizComponent } from './pages/quiz/quiz.component';
 import { QuestionComponent } from './pages/question/question.component';
-import { UserListComponent } from './components/user-list/user-list.component';
+//import {DashbordAgenceComponent } from './pages/dashbord-agence/dashbord-agence.component';
+//import {DashbordCandidatComponent } from './pages/dashbord-candidat/dashbord-candidat.component';
 
 export const routes: Routes = [
     { path: 'apropos', component: AproposComponent },
@@ -13,8 +14,8 @@ export const routes: Routes = [
     { path: '', component: AccueilComponent },
     { path: 'quiz', component: QuizComponent },
     { path: 'quiz/:id', component: QuestionComponent },
-    { path: 'users', component: UserListComponent },
-    { path: '', redirectTo: '/users', pathMatch: 'full' }
+//    { path: 'dashbordAgence', component: DashbordAgenceComponent}
+//    { path: 'dashboardCandidat', component: DashbordCandidatComponent}
 
 ];
 @NgModule({
