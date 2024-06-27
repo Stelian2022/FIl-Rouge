@@ -9,6 +9,7 @@ import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
 import { AppComponent } from './app.component';
 
+
 @NgModule({
   declarations: [
     LoginComponent,
@@ -19,6 +20,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpClientModule,
     RouterModule
+
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]

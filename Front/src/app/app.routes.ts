@@ -8,14 +8,19 @@ import { QuestionComponent } from './pages/question/question.component';
 //import {DashbordAgenceComponent } from './pages/dashbord-agence/dashbord-agence.component';
 //import {DashbordCandidatComponent } from './pages/dashbord-candidat/dashbord-candidat.component';
 
+
 export const routes: Routes = [
     { path: 'apropos', component: AproposComponent },
     { path: 'contact', component: ContactComponent },
     { path: '', component: AccueilComponent },
     { path: 'quiz', component: QuizComponent },
     { path: 'quiz/:id', component: QuestionComponent },
+
 //    { path: 'dashbordAgence', component: DashbordAgenceComponent}
 //    { path: 'dashboardCandidat', component: DashbordCandidatComponent}
+
+    { path: '', redirectTo: '/users', pathMatch: 'full' }
+
 
 ];
 @NgModule({
