@@ -8,11 +8,10 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './user-list.component.html',
-  styleUrls: ['./user-list.component.css']
+  styleUrls: []
 })
 export class UserListComponent implements OnInit {
   users: User[] = [];
-
   constructor(private userService: UserService) { }
 
   ngOnInit(): void {
