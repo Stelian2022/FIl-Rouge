@@ -10,6 +10,7 @@
       <a *ngIf="isLoggedIn" (click)="logout()">Logout</a>
       <a routerLink="/dashbordAdmin">Admin</a>
       <a routerLink="/dashbordAgence">Agence</a>
+   
     </div>
   </nav>
 </header>
@@ -17,5 +18,10 @@
 </main>
 <router-outlet></router-outlet>
 <footer>
-  <p>&copy; 2023 Web School. Tous droits réservés.</p>
+  <div class="social-links">
+    <a href="https://github.com/Stelian2022" target="_blank">GitHub</a>
+    |
+    <a href="https://www.linkedin.com/in/stelian-constantin-stanciu" target="_blank">LinkedIn</a>
+  </div>
+  <p>&copy; 2024 Web School. Tous droits réservés.</p>
 </footer>
