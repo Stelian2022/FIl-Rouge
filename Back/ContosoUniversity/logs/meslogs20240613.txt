@@ -1,0 +1,114 @@
+2024-06-13 10:25:04.283 +02:00 [INF] Executed DbCommand (218ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [ContosoUniversity];
+2024-06-13 10:25:04.383 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [ContosoUniversity] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2024-06-13 10:25:04.399 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 10:25:04.455 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2024-06-13 10:25:04.456 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-13 10:25:04.467 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-13 10:25:04.470 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-13 10:25:04.481 +02:00 [INF] Applying migration '20240613082427_Contoso_V1'.
+2024-06-13 10:25:04.508 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Courses] (
+    [Id] int NOT NULL IDENTITY,
+    [Title] nvarchar(max) NOT NULL,
+    [Credits] int NOT NULL,
+    CONSTRAINT [PK_Courses] PRIMARY KEY ([Id])
+);
+2024-06-13 10:25:04.510 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Students] (
+    [Id] int NOT NULL IDENTITY,
+    [LastName] nvarchar(max) NOT NULL,
+    [FirstName] nvarchar(max) NOT NULL,
+    [EnrollmentDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
+);
+2024-06-13 10:25:04.512 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Enrollments] (
+    [Id] int NOT NULL IDENTITY,
+    [Grade] int NULL,
+    [CourseId] int NOT NULL,
+    [StudentId] int NOT NULL,
+    CONSTRAINT [PK_Enrollments] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Enrollments_Courses_CourseId] FOREIGN KEY ([CourseId]) REFERENCES [Courses] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Enrollments_Students_StudentId] FOREIGN KEY ([StudentId]) REFERENCES [Students] ([Id]) ON DELETE CASCADE
+);
+2024-06-13 10:25:04.513 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Enrollments_CourseId] ON [Enrollments] ([CourseId]);
+2024-06-13 10:25:04.514 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Enrollments_StudentId] ON [Enrollments] ([StudentId]);
+2024-06-13 10:25:04.516 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240613082427_Contoso_V1', N'8.0.6');
+2024-06-13 11:31:04.763 +02:00 [INF] User profile is available. Using 'C:\Users\kklak\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-13 11:31:05.261 +02:00 [INF] Now listening on: https://localhost:7262
+2024-06-13 11:31:05.261 +02:00 [INF] Now listening on: http://localhost:5032
+2024-06-13 11:31:05.262 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-13 11:31:05.262 +02:00 [INF] Hosting environment: Development
+2024-06-13 11:31:05.263 +02:00 [INF] Content root path: C:\Users\kklak\OneDrive\Documents\Cours\Cours .Net\Exercices\a-faire\7.2 Code First\ContosoUniversity
+2024-06-13 11:31:05.855 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ - null null
+2024-06-13 11:31:06.089 +02:00 [INF] Executing endpoint 'ContosoUniversity.Controllers.HomeController.Index (ContosoUniversity)'
+2024-06-13 11:31:06.126 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContosoUniversity.Controllers.HomeController (ContosoUniversity).
+2024-06-13 11:31:06.129 +02:00 [INF] Home/Index
+2024-06-13 11:31:06.136 +02:00 [INF] Executing ViewResult, running view Index.
+2024-06-13 11:31:06.295 +02:00 [INF] Executed ViewResult - view Index executed in 161.2812ms.
+2024-06-13 11:31:06.296 +02:00 [INF] Executed action ContosoUniversity.Controllers.HomeController.Index (ContosoUniversity) in 169.5493ms
+2024-06-13 11:31:06.296 +02:00 [INF] Executed endpoint 'ContosoUniversity.Controllers.HomeController.Index (ContosoUniversity)'
+2024-06-13 11:31:06.300 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ - 200 null text/html; charset=utf-8 450.6925ms
+2024-06-13 11:31:06.354 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2024-06-13 11:31:06.357 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/css/site.css?v=5KjBYEP8XsGTJ-B0smJmV4FgUM0DBFznEYcItZOQ8lk - null null
+2024-06-13 11:31:06.357 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ContosoUniversity.styles.css?v=qxAhvRjF8nV-d3-8HzL2ZtFQCgGctE7Zdi2pDvUtVzg - null null
+2024-06-13 11:31:06.357 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/lib/jquery/dist/jquery.min.js - null null
+2024-06-13 11:31:06.364 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2024-06-13 11:31:06.365 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2024-06-13 11:31:06.372 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-13 11:31:06.383 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_vs/browserLink - null null
+2024-06-13 11:31:06.417 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 46.7232ms
+2024-06-13 11:31:06.424 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Cours\Cours .Net\Exercices\a-faire\7.2 Code First\ContosoUniversity\wwwroot\css\site.css'
+2024-06-13 11:31:06.424 +02:00 [INF] Sending file. Request path: '/ContosoUniversity.styles.css'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Cours\Cours .Net\Exercices\a-faire\7.2 Code First\ContosoUniversity\obj\Debug\net8.0\scopedcss\bundle\ContosoUniversity.styles.css'
+2024-06-13 11:31:06.424 +02:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Cours\Cours .Net\Exercices\a-faire\7.2 Code First\ContosoUniversity\wwwroot\js\site.js'
+2024-06-13 11:31:06.430 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Cours\Cours .Net\Exercices\a-faire\7.2 Code First\ContosoUniversity\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2024-06-13 11:31:06.432 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/css/site.css?v=5KjBYEP8XsGTJ-B0smJmV4FgUM0DBFznEYcItZOQ8lk - 200 537 text/css 74.3539ms
+2024-06-13 11:31:06.432 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ContosoUniversity.styles.css?v=qxAhvRjF8nV-d3-8HzL2ZtFQCgGctE7Zdi2pDvUtVzg - 200 1257 text/css 74.3453ms
+2024-06-13 11:31:06.432 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 67.1562ms
+2024-06-13 11:31:06.432 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 67.7793ms
+2024-06-13 11:31:06.433 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Cours\Cours .Net\Exercices\a-faire\7.2 Code First\ContosoUniversity\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2024-06-13 11:31:06.434 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 79.8964ms
+2024-06-13 11:31:06.438 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css - null null
+2024-06-13 11:31:06.454 +02:00 [INF] Sending file. Request path: '/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css'. Physical path: 'C:\Users\kklak\.nuget\packages\microsoft.aspnetcore.components.quickgrid\8.0.0\staticwebassets\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css'
+2024-06-13 11:31:06.455 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css - 200 8251 text/css 17.235ms
+2024-06-13 11:31:06.463 +02:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Cours\Cours .Net\Exercices\a-faire\7.2 Code First\ContosoUniversity\wwwroot\lib\jquery\dist\jquery.min.js'
+2024-06-13 11:31:06.464 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 106.4867ms
+2024-06-13 11:31:06.465 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/images/logo.png - null null
+2024-06-13 11:31:06.478 +02:00 [INF] Sending file. Request path: '/images/logo.png'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Cours\Cours .Net\Exercices\a-faire\7.2 Code First\ContosoUniversity\wwwroot\images\logo.png'
+2024-06-13 11:31:06.479 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/images/logo.png - 200 7679 image/png 14.5135ms
+2024-06-13 11:31:06.486 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.553ms
+2024-06-13 11:31:07.881 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/Students - null null
+2024-06-13 11:31:07.894 +02:00 [INF] Executing endpoint 'ContosoUniversity.Controllers.StudentsController.Index (ContosoUniversity)'
+2024-06-13 11:31:07.906 +02:00 [INF] Route matched with {action = "Index", controller = "Students"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ContosoUniversity.Controllers.StudentsController (ContosoUniversity).
+2024-06-13 11:31:09.459 +02:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[EnrollmentDate], [s].[FirstName], [s].[LastName], [s].[PhotoUri]
+FROM [Students] AS [s]
+2024-06-13 11:31:09.504 +02:00 [INF] Executing ViewResult, running view Index.
+2024-06-13 11:31:09.538 +02:00 [INF] Executed ViewResult - view Index executed in 34.3651ms.
+2024-06-13 11:31:09.541 +02:00 [INF] Executed action ContosoUniversity.Controllers.StudentsController.Index (ContosoUniversity) in 1634.9122ms
+2024-06-13 11:31:09.542 +02:00 [INF] Executed endpoint 'ContosoUniversity.Controllers.StudentsController.Index (ContosoUniversity)'
+2024-06-13 11:31:09.550 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/Students - 200 null text/html; charset=utf-8 1669.8572ms
+2024-06-13 11:31:09.575 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-13 11:31:09.576 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_vs/browserLink - null null
+2024-06-13 11:31:09.577 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 2.1718ms
+2024-06-13 11:31:09.591 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.9264ms

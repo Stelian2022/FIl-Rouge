@@ -1,0 +1,142 @@
+2024-06-26 15:22:01.890 +02:00 [INF] User profile is available. Using 'C:\Users\kklak\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-26 15:22:02.726 +02:00 [INF] Now listening on: https://localhost:7262
+2024-06-26 15:22:02.726 +02:00 [INF] Now listening on: http://localhost:5032
+2024-06-26 15:22:02.729 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-26 15:22:02.729 +02:00 [INF] Hosting environment: Development
+2024-06-26 15:22:02.730 +02:00 [INF] Content root path: C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity
+2024-06-26 15:22:03.570 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ - null null
+2024-06-26 15:22:03.900 +02:00 [INF] Executing endpoint 'ContosoUniversity.Controllers.HomeController.Index (Interview)'
+2024-06-26 15:22:03.999 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContosoUniversity.Controllers.HomeController (Interview).
+2024-06-26 15:22:04.007 +02:00 [INF] Home/Index
+2024-06-26 15:22:04.027 +02:00 [INF] Executing ViewResult, running view Index.
+2024-06-26 15:22:04.282 +02:00 [INF] Executed ViewResult - view Index executed in 266.0556ms.
+2024-06-26 15:22:04.284 +02:00 [INF] Executed action ContosoUniversity.Controllers.HomeController.Index (Interview) in 282.8547ms
+2024-06-26 15:22:04.284 +02:00 [INF] Executed endpoint 'ContosoUniversity.Controllers.HomeController.Index (Interview)'
+2024-06-26 15:22:04.292 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ - 200 null text/html; charset=utf-8 730.0631ms
+2024-06-26 15:22:04.332 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2024-06-26 15:22:04.332 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/css/site.css?v=5KjBYEP8XsGTJ-B0smJmV4FgUM0DBFznEYcItZOQ8lk - null null
+2024-06-26 15:22:04.333 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2024-06-26 15:22:04.333 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ContosoUniversity.styles.css - null null
+2024-06-26 15:22:04.334 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/lib/jquery/dist/jquery.min.js - null null
+2024-06-26 15:22:04.347 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2024-06-26 15:22:04.355 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ContosoUniversity.styles.css - 404 0 null 22.1965ms
+2024-06-26 15:22:04.358 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-26 15:22:04.362 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7262/ContosoUniversity.styles.css, Response status code: 404
+2024-06-26 15:22:04.401 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity\wwwroot\css\site.css'
+2024-06-26 15:22:04.401 +02:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity\wwwroot\js\site.js'
+2024-06-26 15:22:04.402 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 43.6799ms
+2024-06-26 15:22:04.403 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_vs/browserLink - null null
+2024-06-26 15:22:04.439 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/css/site.css?v=5KjBYEP8XsGTJ-B0smJmV4FgUM0DBFznEYcItZOQ8lk - 200 537 text/css 72.5114ms
+2024-06-26 15:22:04.440 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 93.5387ms
+2024-06-26 15:22:04.457 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2024-06-26 15:22:04.457 +02:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity\wwwroot\lib\jquery\dist\jquery.min.js'
+2024-06-26 15:22:04.458 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 124.5432ms
+2024-06-26 15:22:04.458 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 123.8771ms
+2024-06-26 15:22:04.461 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2024-06-26 15:22:04.461 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 129.2301ms
+2024-06-26 15:22:04.488 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/images/logo.png - null null
+2024-06-26 15:22:04.502 +02:00 [INF] Sending file. Request path: '/images/logo.png'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity\wwwroot\images\logo.png'
+2024-06-26 15:22:04.503 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/images/logo.png - 200 7679 image/png 15.0362ms
+2024-06-26 15:22:04.560 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_vs/browserLink - 200 null text/javascript; charset=UTF-8 157.0714ms
+2024-06-26 15:22:12.463 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/Students - null null
+2024-06-26 15:22:12.483 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/Students - 404 0 null 20.8036ms
+2024-06-26 15:22:12.484 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7262/Students, Response status code: 404
+2024-06-26 15:22:14.385 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-26 15:22:14.388 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 2.7203ms
+2024-06-26 16:07:07.639 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ - null null
+2024-06-26 16:07:07.671 +02:00 [INF] Executing endpoint 'ContosoUniversity.Controllers.HomeController.Index (Interview)'
+2024-06-26 16:07:07.672 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContosoUniversity.Controllers.HomeController (Interview).
+2024-06-26 16:07:07.673 +02:00 [INF] Home/Index
+2024-06-26 16:07:07.679 +02:00 [INF] Executing ViewResult, running view Index.
+2024-06-26 16:07:07.687 +02:00 [INF] Executed ViewResult - view Index executed in 13.5773ms.
+2024-06-26 16:07:07.688 +02:00 [INF] Executed action ContosoUniversity.Controllers.HomeController.Index (Interview) in 15.1358ms
+2024-06-26 16:07:07.688 +02:00 [INF] Executed endpoint 'ContosoUniversity.Controllers.HomeController.Index (Interview)'
+2024-06-26 16:07:07.688 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ - 200 null text/html; charset=utf-8 51.2757ms
+2024-06-26 16:07:07.738 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ContosoUniversity.styles.css - null null
+2024-06-26 16:07:07.738 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-26 16:07:07.741 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ContosoUniversity.styles.css - 404 0 null 2.774ms
+2024-06-26 16:07:07.741 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_vs/browserLink - null null
+2024-06-26 16:07:07.741 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7262/ContosoUniversity.styles.css, Response status code: 404
+2024-06-26 16:07:07.745 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 7.2308ms
+2024-06-26 16:07:07.775 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.5856ms
+2024-06-26 16:07:07.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/favicon.ico - null null
+2024-06-26 16:07:07.809 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity\wwwroot\favicon.ico'
+2024-06-26 16:07:07.810 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/favicon.ico - 200 5430 image/x-icon 17.3052ms
+2024-06-26 16:07:08.557 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ - null null
+2024-06-26 16:07:08.562 +02:00 [INF] Executing endpoint 'ContosoUniversity.Controllers.HomeController.Index (Interview)'
+2024-06-26 16:07:08.562 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContosoUniversity.Controllers.HomeController (Interview).
+2024-06-26 16:07:08.562 +02:00 [INF] Home/Index
+2024-06-26 16:07:08.562 +02:00 [INF] Executing ViewResult, running view Index.
+2024-06-26 16:07:08.564 +02:00 [INF] Executed ViewResult - view Index executed in 1.6952ms.
+2024-06-26 16:07:08.564 +02:00 [INF] Executed action ContosoUniversity.Controllers.HomeController.Index (Interview) in 2.0935ms
+2024-06-26 16:07:08.564 +02:00 [INF] Executed endpoint 'ContosoUniversity.Controllers.HomeController.Index (Interview)'
+2024-06-26 16:07:08.565 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ - 200 null text/html; charset=utf-8 7.7852ms
+2024-06-26 16:07:08.694 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ContosoUniversity.styles.css - null null
+2024-06-26 16:07:08.694 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-26 16:07:08.694 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_vs/browserLink - null null
+2024-06-26 16:07:08.695 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 1.4442ms
+2024-06-26 16:07:08.698 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ContosoUniversity.styles.css - 404 0 null 4.3202ms
+2024-06-26 16:07:08.698 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7262/ContosoUniversity.styles.css, Response status code: 404
+2024-06-26 16:07:08.713 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.087ms
+2024-06-26 16:07:09.165 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ - null null
+2024-06-26 16:07:09.377 +02:00 [INF] Executing endpoint 'ContosoUniversity.Controllers.HomeController.Index (Interview)'
+2024-06-26 16:07:09.377 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContosoUniversity.Controllers.HomeController (Interview).
+2024-06-26 16:07:09.377 +02:00 [INF] Home/Index
+2024-06-26 16:07:09.377 +02:00 [INF] Executing ViewResult, running view Index.
+2024-06-26 16:07:09.378 +02:00 [INF] Executed ViewResult - view Index executed in 1.4346ms.
+2024-06-26 16:07:09.378 +02:00 [INF] Executed action ContosoUniversity.Controllers.HomeController.Index (Interview) in 1.7336ms
+2024-06-26 16:07:09.379 +02:00 [INF] Executed endpoint 'ContosoUniversity.Controllers.HomeController.Index (Interview)'
+2024-06-26 16:07:09.379 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ - 200 null text/html; charset=utf-8 214.1103ms
+2024-06-26 16:07:09.416 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ContosoUniversity.styles.css - null null
+2024-06-26 16:07:09.417 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ContosoUniversity.styles.css - 404 0 null 1.1702ms
+2024-06-26 16:07:09.417 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7262/ContosoUniversity.styles.css, Response status code: 404
+2024-06-26 16:07:09.425 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_vs/browserLink - null null
+2024-06-26 16:07:09.426 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-26 16:07:09.428 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 1.2092ms
+2024-06-26 16:07:09.455 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.4381ms
+2024-06-26 16:17:14.642 +02:00 [INF] User profile is available. Using 'C:\Users\kklak\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-26 16:17:14.915 +02:00 [INF] Now listening on: https://localhost:7262
+2024-06-26 16:17:14.916 +02:00 [INF] Now listening on: http://localhost:5032
+2024-06-26 16:17:14.917 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-26 16:17:14.917 +02:00 [INF] Hosting environment: Development
+2024-06-26 16:17:14.917 +02:00 [INF] Content root path: C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity
+2024-06-26 16:17:15.587 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ - null null
+2024-06-26 16:17:15.744 +02:00 [INF] Executing endpoint 'Interview.Controllers.HomeController.Index (Interview)'
+2024-06-26 16:17:15.786 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Interview.Controllers.HomeController (Interview).
+2024-06-26 16:17:15.789 +02:00 [INF] Home/Index
+2024-06-26 16:17:15.797 +02:00 [INF] Executing ViewResult, running view Index.
+2024-06-26 16:17:15.892 +02:00 [INF] Executed ViewResult - view Index executed in 98.2689ms.
+2024-06-26 16:17:15.892 +02:00 [INF] Executed action Interview.Controllers.HomeController.Index (Interview) in 106.1676ms
+2024-06-26 16:17:15.892 +02:00 [INF] Executed endpoint 'Interview.Controllers.HomeController.Index (Interview)'
+2024-06-26 16:17:15.895 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ - 200 null text/html; charset=utf-8 312.3463ms
+2024-06-26 16:17:15.935 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-26 16:17:15.935 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/Interview.styles.css?v=9o7w-TBx3RudOGMliW2VYfZrpNX3UkbJGBtOkVRPC3I - null null
+2024-06-26 16:17:15.953 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_vs/browserLink - null null
+2024-06-26 16:17:15.960 +02:00 [INF] Sending file. Request path: '/Interview.styles.css'. Physical path: 'C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity\obj\Debug\net8.0\scopedcss\bundle\Interview.styles.css'
+2024-06-26 16:17:15.960 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 25.1625ms
+2024-06-26 16:17:15.960 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/Interview.styles.css?v=9o7w-TBx3RudOGMliW2VYfZrpNX3UkbJGBtOkVRPC3I - 200 1249 text/css 25.2413ms
+2024-06-26 16:17:15.969 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css - null null
+2024-06-26 16:17:15.997 +02:00 [INF] Sending file. Request path: '/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css'. Physical path: 'C:\Users\kklak\.nuget\packages\microsoft.aspnetcore.components.quickgrid\8.0.0\staticwebassets\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css'
+2024-06-26 16:17:16.000 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css - 200 8251 text/css 30.9963ms
+2024-06-26 16:17:16.024 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.8972ms
+2024-06-26 16:17:18.476 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/Users - null null
+2024-06-26 16:17:18.497 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/Users - 404 0 null 22.9902ms
+2024-06-26 16:17:18.499 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7262/Users, Response status code: 404
+2024-06-26 16:17:20.935 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-26 16:17:20.940 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 7.1741ms
+2024-06-26 16:17:24.686 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ - null null
+2024-06-26 16:17:24.696 +02:00 [INF] Executing endpoint 'Interview.Controllers.HomeController.Index (Interview)'
+2024-06-26 16:17:24.697 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Interview.Controllers.HomeController (Interview).
+2024-06-26 16:17:24.697 +02:00 [INF] Home/Index
+2024-06-26 16:17:24.698 +02:00 [INF] Executing ViewResult, running view Index.
+2024-06-26 16:17:24.708 +02:00 [INF] Executed ViewResult - view Index executed in 10.453ms.
+2024-06-26 16:17:24.708 +02:00 [INF] Executed action Interview.Controllers.HomeController.Index (Interview) in 11.4734ms
+2024-06-26 16:17:24.709 +02:00 [INF] Executed endpoint 'Interview.Controllers.HomeController.Index (Interview)'
+2024-06-26 16:17:24.709 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ - 200 null text/html; charset=utf-8 24.1737ms
+2024-06-26 16:17:24.753 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/Interview.styles.css?v=9o7w-TBx3RudOGMliW2VYfZrpNX3UkbJGBtOkVRPC3I - null null
+2024-06-26 16:17:24.754 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-26 16:17:24.756 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_vs/browserLink - null null
+2024-06-26 16:17:24.757 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 2.4313ms
+2024-06-26 16:17:24.760 +02:00 [INF] The file /Interview.styles.css was not modified
+2024-06-26 16:17:24.761 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/Interview.styles.css?v=9o7w-TBx3RudOGMliW2VYfZrpNX3UkbJGBtOkVRPC3I - 304 null text/css 7.3025ms
+2024-06-26 16:17:24.793 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.387ms

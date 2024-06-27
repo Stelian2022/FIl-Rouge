@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table-container {
+    padding: 2rem;
+    margin: 0 auto; // Center the table horizontally
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-collapse: collapse;
+    display: block; // Ensures margin auto works for centering
+    width: fit-content; // Ensures the table does not stretch full width
+    margin-top: 50px; /* Adds space between the navbar and the table */
+  }
+  
+  .table-container th, .table-container td {
+    border: 1px solid gray;
+    padding: 0.5rem;
+    text-align: left;
+  }   
+  
+  .table-container th, .table-container td {
+    border: 1px solid gray;
+    padding: 0.5rem;
+    text-align: left;
+  }   
+  
