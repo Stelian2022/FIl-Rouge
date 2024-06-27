@@ -8,17 +8,25 @@ import { LoginComponent } from './pages/login/login.component';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
 import { AppComponent } from './app.component';
+import { CommonModule } from '@angular/common';
+//import { UserListComponent } from './components/user-list/user-list.component';
+
 
 @NgModule({
   declarations: [
-    LoginComponent,
+    LoginComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    UserListComponent,
+    CommonModule
+   
+
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
