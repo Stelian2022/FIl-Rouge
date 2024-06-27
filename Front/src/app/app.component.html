@@ -1,20 +1,20 @@
-<div class="bg-white shadow-lg rounded-lg w-full mx-auto">
+<div class="bg-white shadow-lg rounded-lg w-full mx-auto" style="background-color: #F5F9FF;">
   <div class="flex flex-row items-center justify-between">
     <div class="flex flex-row items-center w-full md:w-1/2 p-4">
       <!-- <svg width="100" height="100" class="mb-4">
         <image xlink:href="/assets/img/logocyber-web-removebg.png" width="100" height="100" />
       </svg> -->
-      <h1 class="text-3xl font-bold mb-2">{{ title }}</h1>
+      <h1 class="text-3xl font-bold mb-2" style="color: #545454;">{{ title }}</h1>
       <p class="text-center text-gray-700"></p>
     </div>
     <div class="border-l border-gray-300 mx-8 hidden md:block" role="separator" aria-label="Divider"></div>
     <div class="flex flex-col items-center w-full md:w-1/2 p-4">
       <nav class="mb-4">
         <div class="flex items-center">
-          <a routerLink="/" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4">Accueil</a>
+          <a routerLink="/" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4" style="color: #545454;">Accueil</a>
           <!-- <a routerLink="/apropos" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4">A propos</a> -->
-          <a routerLink="/contact" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4">Contact</a>
-          <a routerLink="/login" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg flex items-center mr-4">
+          <a routerLink="/contact" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4" style="color: #545454;">Contact</a>
+          <a routerLink="/login" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg flex items-center mr-4" style="color: #545454;">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
               <circle cx="8.5" cy="7" r="4" />
@@ -22,9 +22,9 @@
             </svg>
             Se connecter
           </a>
-          <a *ngIf="isLoggedIn" (click)="logout()" class="text-red-600 hover:text-red-800 hover:bg-red-100 transition-colors duration-300 py-2 px-4 rounded-lg">Logout</a>
-          <a routerLink="/dashbordAdmin" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4">Admin</a>
-          <a routerLink="/dashbordAgence" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4">Agence</a>
+          <a *ngIf="isLoggedIn" (click)="logout()" class="text-red-600 hover:text-red-800 hover:bg-red-100 transition-colors duration-300 py-2 px-4 rounded-lg" style="color: #545454;">Logout</a>
+          <a routerLink="/dashbordAdmin" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4" style="color: #545454;">Admin</a>
+          <a routerLink="/dashbordAgence" class="text-blue-600 hover:text-blue-800 hover:bg-blue-100 transition-colors duration-300 py-2 px-4 rounded-lg mr-4" style="color: #545454;">Agence</a>
         </div>
       
       </nav>
@@ -32,10 +32,10 @@
   </div>
 </div>
 <router-outlet></router-outlet>
-<footer class="bg-gray-800 text-white py-6 fixed inset-x-0 bottom-0">
+<footer class="bg-gray-800 text-white py-6 fixed inset-x-0 bottom-0" style="background-color: #F5F9FF;">
   <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
     <div class="mb-4 md:mb-0">
-      <h2 class="text-2xl font-bold">Restez en Contact</h2>
+      <h2 class="text-2xl font-bold" style="color: #545454;">Restez en Contact</h2>
       <p class="mt-2">Suivez-nous sur les réseaux sociaux</p>
     </div>
     <div class="flex items-center">
