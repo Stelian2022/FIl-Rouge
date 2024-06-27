@@ -1,0 +1,30 @@
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\bin\Debug\net8.0\Interview.Core.deps.json
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\bin\Debug\net8.0\Interview.Core.runtimeconfig.json
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\bin\Debug\net8.0\Interview.Core.dll
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\bin\Debug\net8.0\Interview.Core.pdb
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.csproj.AssemblyReference.cache
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.AssemblyInfoInputs.cache
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.AssemblyInfo.cs
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.csproj.CoreCompileInputs.cache
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.sourcelink.json
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.dll
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\obj\Debug\net8.0\refint\Interview.Core.dll
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.pdb
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.genruntimeconfig.cache
+C:\Users\kklak\OneDrive\Documents\Projects\WIP\back_interview\TestBack\ContosoUniversity.Core\obj\Debug\net8.0\ref\Interview.Core.dll
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\bin\Debug\net8.0\Interview.Core.deps.json
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\bin\Debug\net8.0\Interview.Core.runtimeconfig.json
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\bin\Debug\net8.0\Interview.Core.dll
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\bin\Debug\net8.0\Interview.Core.pdb
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.csproj.AssemblyReference.cache
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.AssemblyInfoInputs.cache
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.AssemblyInfo.cs
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.csproj.CoreCompileInputs.cache
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.sourcelink.json
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.dll
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\obj\Debug\net8.0\refint\Interview.Core.dll
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.pdb
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\obj\Debug\net8.0\Interview.Core.genruntimeconfig.cache
+C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\interview_web_app_back\ContosoUniversity.Core\obj\Debug\net8.0\ref\Interview.Core.dll

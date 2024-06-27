@@ -9,10 +9,11 @@ import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './components/user-list/user-list.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    LoginComponent,
+    LoginComponent
     
   ],
   imports: [
@@ -21,7 +22,8 @@ import { UserListComponent } from './components/user-list/user-list.component';
     FormsModule,
     HttpClientModule,
     RouterModule,
-    UserListComponent
+    UserListComponent,
+    CommonModule
    
   ],
   providers: [AuthService, AuthGuard],
