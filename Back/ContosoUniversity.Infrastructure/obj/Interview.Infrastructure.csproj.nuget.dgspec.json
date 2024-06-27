@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\interview_web_app_back\\ContosoUniversity.Infrastructure\\Interview.Infrastructure.csproj": {}
+    "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\ContosoUniversity.Infrastructure\\Interview.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\interview_web_app_back\\ContosoUniversity.Core\\Interview.Core.csproj": {
+    "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\ContosoUniversity.Core\\Interview.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\interview_web_app_back\\ContosoUniversity.Core\\Interview.Core.csproj",
+        "projectUniqueName": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\ContosoUniversity.Core\\Interview.Core.csproj",
         "projectName": "Interview.Core",
-        "projectPath": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\interview_web_app_back\\ContosoUniversity.Core\\Interview.Core.csproj",
+        "projectPath": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\ContosoUniversity.Core\\Interview.Core.csproj",
         "packagesPath": "C:\\Users\\IB\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\interview_web_app_back\\ContosoUniversity.Core\\obj\\",
+        "outputPath": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\ContosoUniversity.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IB\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -77,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\interview_web_app_back\\ContosoUniversity.Infrastructure\\Interview.Infrastructure.csproj": {
+    "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\ContosoUniversity.Infrastructure\\Interview.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\interview_web_app_back\\ContosoUniversity.Infrastructure\\Interview.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\ContosoUniversity.Infrastructure\\Interview.Infrastructure.csproj",
         "projectName": "Interview.Infrastructure",
-        "projectPath": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\interview_web_app_back\\ContosoUniversity.Infrastructure\\Interview.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\ContosoUniversity.Infrastructure\\Interview.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\IB\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\interview_web_app_back\\ContosoUniversity.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\ContosoUniversity.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IB\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -102,8 +102,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\interview_web_app_back\\ContosoUniversity.Core\\Interview.Core.csproj": {
-                "projectPath": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\interview_web_app_back\\ContosoUniversity.Core\\Interview.Core.csproj"
+              "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\ContosoUniversity.Core\\Interview.Core.csproj": {
+                "projectPath": "C:\\Users\\IB\\Desktop\\Ib cegos dev-.NET\\FIl-Rouge\\Back\\ContosoUniversity.Core\\Interview.Core.csproj"
               }
             }
           }

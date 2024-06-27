@@ -1,0 +1,33 @@
+2024-06-27 11:58:23.202 +02:00 [INF] User profile is available. Using 'C:\Users\IB\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-27 11:58:23.332 +02:00 [INF] Now listening on: https://localhost:7262
+2024-06-27 11:58:23.332 +02:00 [INF] Now listening on: http://localhost:5032
+2024-06-27 11:58:23.332 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-27 11:58:23.333 +02:00 [INF] Hosting environment: Development
+2024-06-27 11:58:23.333 +02:00 [INF] Content root path: C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\ContosoUniversity
+2024-06-27 11:58:24.117 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/ - null null
+2024-06-27 11:58:24.225 +02:00 [INF] Executing endpoint 'Interview.Controllers.HomeController.Index (Interview)'
+2024-06-27 11:58:24.242 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Interview.Controllers.HomeController (Interview).
+2024-06-27 11:58:24.243 +02:00 [INF] Home/Index
+2024-06-27 11:58:24.248 +02:00 [INF] Executing ViewResult, running view Index.
+2024-06-27 11:58:24.307 +02:00 [INF] Executed ViewResult - view Index executed in 60.9955ms.
+2024-06-27 11:58:24.307 +02:00 [INF] Executed action Interview.Controllers.HomeController.Index (Interview) in 65.065ms
+2024-06-27 11:58:24.307 +02:00 [INF] Executed endpoint 'Interview.Controllers.HomeController.Index (Interview)'
+2024-06-27 11:58:24.309 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/ - 200 null text/html; charset=utf-8 195.6466ms
+2024-06-27 11:58:24.317 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-27 11:58:24.317 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/Interview.styles.css?v=9o7w-TBx3RudOGMliW2VYfZrpNX3UkbJGBtOkVRPC3I - null null
+2024-06-27 11:58:24.320 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_vs/browserLink - null null
+2024-06-27 11:58:24.329 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 12.721ms
+2024-06-27 11:58:24.331 +02:00 [INF] Sending file. Request path: '/Interview.styles.css'. Physical path: 'C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\ContosoUniversity\obj\Debug\net8.0\scopedcss\bundle\Interview.styles.css'
+2024-06-27 11:58:24.331 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/Interview.styles.css?v=9o7w-TBx3RudOGMliW2VYfZrpNX3UkbJGBtOkVRPC3I - 200 1249 text/css 14.5494ms
+2024-06-27 11:58:24.364 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.0747ms
+2024-06-27 11:58:24.385 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/favicon.ico - null null
+2024-06-27 11:58:24.395 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\IB\Desktop\Ib cegos dev-.NET\FIl-Rouge\Back\ContosoUniversity\wwwroot\favicon.ico'
+2024-06-27 11:58:24.396 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/favicon.ico - 200 5430 image/x-icon 11.0431ms
+2024-06-27 11:58:26.804 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/Users - null null
+2024-06-27 11:58:26.810 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/Users - 404 0 null 5.9238ms
+2024-06-27 11:58:26.810 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7262/Users, Response status code: 404
+2024-06-27 11:58:28.263 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-27 11:58:28.265 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 1.3475ms
+2024-06-27 11:58:40.565 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7262/Users - null null
+2024-06-27 11:58:40.567 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7262/Users - 404 0 null 2.9816ms
+2024-06-27 11:58:40.567 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7262/Users, Response status code: 404
