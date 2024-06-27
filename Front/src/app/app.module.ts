@@ -12,8 +12,8 @@ import { UserListComponent } from './components/user-list/user-list.component';
 
 @NgModule({
   declarations: [
-    LoginComponent
-    
+    LoginComponent,
+       
   ],
   imports: [
     BrowserModule,

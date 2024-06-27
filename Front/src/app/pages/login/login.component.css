@@ -23,4 +23,7 @@
   .error {
     color: red;
   }
+ .flex-col{
+  min-height: 70vh;
+ }
   

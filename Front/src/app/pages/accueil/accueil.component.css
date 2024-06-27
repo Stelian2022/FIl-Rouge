@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F0F4F8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 1s ease-in-out;
+}
+
+.animate-zoom-in {
+  animation: zoomIn 1s ease-in-out;
+}
+
+/* Flexbox Styles */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-screen {
+  height: 70vh;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}

@@ -29,10 +29,19 @@ import { NgModule } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'Web School';
+  isLoggedIn = false; // Exemple de variable pour la connexion
+
+  toggleMenu() {
+    const menuItems = document.querySelector('.menu-items');
+    
+    if (menuItems) {
+      menuItems.classList.toggle('active');
+    }
+  }
 logout() {
 throw new Error('Method not implemented.');
 }
-  title = 'Quizz App';
-isLoggedIn: any;
+
 }
 

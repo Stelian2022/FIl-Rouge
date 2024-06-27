@@ -1,33 +1,55 @@
-<div class="sidebar" style="background-color: #F5F9FF;">
-  <div style="float: left;">
-    <button class="btn-candidat" > <a href="/dashboardCandidat">Candidat</a> </button>
+<div class="flex">
+  <!-- Sidebar -->
+  <div class="w-1/4 h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-6">
+    <h2 class="text-2xl font-bold mb-6">Menu</h2>
+    <ul>
+      <li class="mb-4">
+        <a href="/profile" class="block py-2 px-4 rounded hover:bg-purple-500 transition duration-300">Gérer le Profil</a>
+      </li>
+      
+      <li class="mb-4">
+        <a href="/dashboardCandidat" class="block py-2 px-4 rounded hover:bg-purple-500 transition duration-300">Liste des candidats</a>
+      </li>
+      <li class="mb-4">
+        <a href="/accueil" class="block py-2 px-4 rounded hover:bg-purple-500 transition duration-300">Déconnexion</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="w-3/4 p-6">
+    <div class="w-full bg-white shadow-lg rounded-lg p-6 mt-16 mx-auto max-w-4xl">
+      <h1 class="text-3xl font-bold text-center mb-6">Bienvenue sur le dashboard agence</h1>
+      <table class="min-w-full bg-white">
+        <thead>
+          <tr class="w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white">
+            <th class="py-3 px-4 text-left">Id-agence</th>
+            <th class="py-3 px-4 text-left">Nom</th>
+            <th class="py-3 px-4 text-left">Opération</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b hover:bg-gray-100">
+            <td class="py-3 px-4">0</td>
+            <td class="py-3 px-4">agence1</td>
+            <td class="py-3 px-4">
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">Modifier</button>
+              <span class="mx-2"></span>
+              <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">Supprimer</button>
+            </td>
+          </tr>
+          <tr class="border-b hover:bg-gray-100">
+            <td class="py-3 px-4">1</td>
+            <td class="py-3 px-4">agence2</td>
+            <td class="py-3 px-4">
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">Modifier</button>
+              <span class="mx-2"></span>
+              <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">Supprimer</button>
+            </td>
+          </tr>
+          <!-- Les lignes de données peuvent être ajoutées ici -->
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
-
-
-<table class="table-container">
-  <tr style="background-color: #F5F9FF;">
-    <th>Id-agence</th>
-    <th>Nom</th>
-    <th>opération</th>
-  </tr>
-  <tr>
-    <th>0</th>
-    <th>agence1</th>
-    <th>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">modifier</button>
-      <span class="mx-2"></span> <!-- Small space between buttons -->
-      <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">supprimer</button>
-    </th>
-  </tr>
-  <tr>
-    <th>1</th>
-    <th>agence2</th>
-    <th>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">modifier</button>
-      <span class="mx-2"></span> <!-- Small space between buttons -->
-      <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">supprimer</button>
-    </th>
-  </tr>
-  <!-- Les lignes de données peuvent être ajoutées ici -->
-</table>
