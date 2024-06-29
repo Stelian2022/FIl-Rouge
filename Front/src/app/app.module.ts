@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { AgenciesComponent } from './pages/admin/agencies/agencies.component';
 import { CandidatesComponent } from './pages/admin/candidates/candidates.component';
+import { QuizService } from './services/quiz.service';
+import { EmailService } from './services/email.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,7 @@ import { CandidatesComponent } from './pages/admin/candidates/candidates.compone
     UserListComponent
    
   ],
-  providers: [AuthService, AuthGuard],
+  providers: [AuthService, AuthGuard,QuizService, EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
