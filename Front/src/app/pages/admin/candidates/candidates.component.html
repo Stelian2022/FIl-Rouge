@@ -1,0 +1,15 @@
+<div class="content">
+  <h2>Candidats</h2>
+  <form (ngSubmit)="createCandidate()">
+    <!-- Formulaire pour créer un nouveau candidat -->
+    <input [(ngModel)]="newCandidate.name" name="name" placeholder="Nom du candidat" required>
+    <button type="submit">Créer</button>
+  </form>
+  <ul>
+    <li *ngFor="let candidate of candidates">
+      {{ candidate.name }}
+      <button (click)="updateCandidate(candidate.id, candidate)">Modifier</button>
+      <button (click)="deleteCandidate(candidate.id)">Supprimer</button>
+    </li>
+  </ul>
+</div>

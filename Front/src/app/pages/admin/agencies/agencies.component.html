@@ -1,0 +1,16 @@
+
+<div class="content">
+  <h2>Agences</h2>
+  <form (ngSubmit)="createAgency(newAgency)">
+    <!-- Formulaire pour créer une nouvelle agence -->
+    <input [(ngModel)]="newAgency.name" name="name" placeholder="Nom de l'agence" required>
+    <button type="submit">Créer</button>
+  </form>
+  <ul>
+    <li *ngFor="let agency of agencies">
+      {{ agency.name }}
+      <button (click)="updateAgency(agency.id, agency)">Modifier</button>
+      <button (click)="deleteAgency(agency.id)">Supprimer</button>
+    </li>
+  </ul>
+</div>

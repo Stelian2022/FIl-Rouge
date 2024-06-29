@@ -2,15 +2,16 @@
   <h1>{{ title }}</h1>
   <nav>
     <div class="menu-burger" (click)="toggleMenu()">&#9776;</div>
-    <div class="menu-items">
-      <a routerLink="/">Accueil</a>
-      <a routerLink="/apropos">A propos</a>
-      <a routerLink="/contact">Contact</a>
-      <a routerLink="/login">Se connecter</a>
-      <a *ngIf="isLoggedIn" (click)="logout()">Logout</a>
-      <a routerLink="/dashbordAdmin">Admin</a>
-      <a routerLink="/dashbordAgence">Agence</a>
-   
+    <div class="menu-items" [ngClass]="{'active': isMenuOpen}">
+      <button class="close-menu" (click)="toggleMenu()">✕</button>
+
+      <a routerLink="/" (click)="closeMenu()">Accueil</a>
+      <a routerLink="/apropos" (click)="closeMenu()">A propos</a>
+      <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+      <a routerLink="/login" *ngIf="!isLoggedIn" (click)="closeMenu()">Se connecter</a>
+      <a *ngIf="isLoggedIn" (click)="logout(); closeMenu()">Logout</a>
+      <a routerLink="/dashbordAdmin" *ngIf="isAdmin" (click)="closeMenu()">Admin</a>
+      <a routerLink="/dashbordAgence" *ngIf="isAgency" (click)="closeMenu()">Agence</a>
     </div>
   </nav>
 </header>
