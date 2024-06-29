@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Question, Quiz } from '../../quiz.model';
-import { QuizService } from '../../quiz.service';
+import { Question, Quiz } from '../../models/quiz.model';
+import { QuizService } from '../../services/quiz.service';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';

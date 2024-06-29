@@ -5,15 +5,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
-import { AuthService } from './auth.service';
+import { AuthService } from './services/auth.service';
 import { AuthGuard } from './auth.guard';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './components/user-list/user-list.component';
+import { AgenciesComponent } from './pages/admin/agencies/agencies.component';
+import { CandidatesComponent } from './pages/admin/candidates/candidates.component';
 
 @NgModule({
   declarations: [
+    AppComponent,
     LoginComponent,
-       
+    CandidatesComponent,
+    AgenciesComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,6 @@ import { UserListComponent } from './components/user-list/user-list.component';
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
-
 })
 export class AppModule { }
 

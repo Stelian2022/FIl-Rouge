@@ -1,0 +1,24 @@
+.admin-sidebar {
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .admin-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-sidebar li {
+    margin: 10px 0;
+  }
+  
+  .admin-sidebar a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .admin-sidebar a:hover {
+    text-decoration: underline;
+  }

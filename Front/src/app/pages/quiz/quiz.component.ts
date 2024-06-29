@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { QuizService } from '../../quiz.service';
-import { Quiz } from '../../quiz.model';
+import { QuizService } from '../../services/quiz.service';
+import { Quiz } from '../../models/quiz.model';
 
 @Component({
   standalone: true,
