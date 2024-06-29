@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { QuizService } from './quiz.service';
-import { EmailService } from './email.service';
+import { QuizService } from '../../services/quiz.service';
+import { EmailService } from '../../services/email.service';
 
 @Component({
   selector: 'app-manage-quiz',
-  templateUrl: './components/manage-quiz.component.html',
-  styleUrls: ['./components/manage-quiz.component.css']
+  templateUrl: './manage-quiz.component.html',
+  styleUrls: ['./manage-quiz.component.css']
 })
 export class ManageQuizComponent {
   constructor(private quizService: QuizService, private emailService: EmailService) {}
