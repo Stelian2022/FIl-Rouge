@@ -1,0 +1,40 @@
+<div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 pt-10">
+  <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-8">
+<!--    <form [formGroup]="inscriptionForm" (ngSubmit)="onSubmit()">-->
+      <h2 class="text-center text-2xl font-bold mb-6 text-gray-800">Inscription</h2>
+      <div class="mb-4">
+        <input class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="username" type="text" placeholder="Nom d'utilisateur"
+          formControlName="username" required>
+        <div *ngIf="inscriptionForm.get('username')?.invalid && (inscriptionForm.get('username')?.touched || inscriptionForm.get('username')?.dirty)" class="text-red-500">
+          Le nom d'utilisateur est requis.
+        </div>
+      </div>
+      <div class="mb-4">
+        <input class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="email" type="email" placeholder="Adresse e-mail"
+          formControlName="email" required>
+        <div *ngIf="inscriptionForm.get('email')?.invalid && (inscriptionForm.get('email')?.touched || inscriptionForm.get('email')?.dirty)" class="text-red-500">
+          Une adresse e-mail valide est requise.
+        </div>
+      </div>
+      <div class="mb-6">
+        <input class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+          id="password" type="password" placeholder="Mot de passe"
+          formControlName="password" required>
+        <div *ngIf="inscriptionForm.get('password')?.invalid && (inscriptionForm.get('password')?.touched || inscriptionForm.get('password')?.dirty)" class="text-red-500">
+          Le mot de passe doit avoir au moins 6 caractères.
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:scale-105"
+          type="submit" [disabled]="inscriptionForm.invalid">
+          S'inscrire
+        </button>
+      </div>
+      <div class="flex justify-between mt-4">
+        <a href="#" class="text-blue-500 hover:text-blue-700 text-sm">Déjà un compte? Se connecter</a>
+      </div>
+<!--    </form>-->
+  </div>
+</div>

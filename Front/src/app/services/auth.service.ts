@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -10,7 +9,7 @@ export class AuthService {
 
   private isAuthenticated = new BehaviorSubject<boolean>(false);
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) { } // Inject HttpClient
 
   login(username: string, password: string): Promise<any> {
     return new Promise((resolve, reject) => {
