@@ -1,3 +1,4 @@
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
@@ -10,23 +11,30 @@ export class AuthService {
 
   private isAuthenticated = new BehaviorSubject<boolean>(false);
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private http: HttpClient) { }
 
-  login(username: string, password: string): Promise<any> {
-    return new Promise((resolve, reject) => {
-      if (username === 'user' && password === 'password') {
+  login(username: string, password: string): void {
+    this.http.post<Observable<Response>>('http://localhost:5001/api/login', {username, password}).subscribe( (response: any) => {
+      if (response.ok){
         this.isAuthenticated.next(true);
-        this.router.navigate(['accueil']).catch(err => {
-          console.error('Navigation to home failed!', err);
-          reject(err);
-        });
-        resolve(undefined);
-      } else {
-        this.isAuthenticated.next(false);
-        reject('Invalid username or password');
+        this.router.navigate(['accueil'])
       }
-    });
-  }
+    }
+    )}
+    // return new Promise((resolve, reject) => {
+    //   if (username === 'user' && password === 'password') {
+    //     this.isAuthenticated.next(true);
+    //     this.router.navigate(['accueil']).catch(err => {
+    //       console.error('Navigation to home failed!', err);
+    //       reject(err);
+    //     });
+    //     resolve(undefined);
+    //   } else {
+    //     this.isAuthenticated.next(false);
+    //     reject('Invalid username or password');
+    //   }
+    // });
+  
 
   logout(): void {
     this.isAuthenticated.next(false);
@@ -38,4 +46,9 @@ export class AuthService {
   isLoggedIn(): Observable<boolean> {
     return this.isAuthenticated.asObservable();
   }
+}
+
+
+interface Response {
+  ok: boolean
 }
