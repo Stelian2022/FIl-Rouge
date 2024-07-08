@@ -3,7 +3,7 @@ export interface User {
     firstName: string;
     lastName: string;
     email: string;
-    role: string;  //admin, agence, candidat
-    password: string;
+    role?: string;  //admin, agence, candidat
+    password?: string;
   }
   
