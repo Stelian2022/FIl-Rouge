@@ -8,17 +8,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  username: string = '';
+  email: string = '';
   password: string = '';
   loginError: boolean = false;
 
   constructor(private authService: AuthService, private router: Router) {}
   login(): void {
-    this.authService.login(this.username, this.password).then(() => {
-      this.router.navigate(['/accueil']);
-    }).catch(() => {
-        this.loginError = true;
-      }
-    );
+    this.authService.login(this.email, this.password)  
   }
 }

@@ -13,8 +13,8 @@ export class AuthService {
 
   constructor(private router: Router, private http: HttpClient) { }
 
-  login(username: string, password: string): void {
-    this.http.post<Observable<Response>>('http://localhost:5001/api/login', {username, password}).subscribe( (response: any) => {
+  login(email: string, password: string): void {
+    this.http.post<Observable<Response>>('http://localhost:5032/Identity/Account/Login', {email, password}).subscribe( (response: any) => {
       if (response.ok){
         this.isAuthenticated.next(true);
         this.router.navigate(['accueil'])
