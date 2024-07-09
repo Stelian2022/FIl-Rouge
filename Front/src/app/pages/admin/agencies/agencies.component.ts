@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { AgencyService } from '../../../services/agency.service';
+import { FormsModule } from '@angular/forms';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-agencies',
+  standalone: true,
+  imports: [FormsModule, NgFor],
   templateUrl: './agencies.component.html',
   styleUrls: ['./agencies.component.css']
 })
