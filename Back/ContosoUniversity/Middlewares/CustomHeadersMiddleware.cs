@@ -1,4 +1,4 @@
-﻿namespace Interview.Middlewares;
+﻿namespace QuizApp.Middlewares;
 
 public class CustomHeadersMiddleware
 {

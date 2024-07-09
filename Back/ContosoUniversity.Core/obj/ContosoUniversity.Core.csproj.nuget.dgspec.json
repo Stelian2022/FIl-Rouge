@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kklak\\OneDrive\\Documents\\Projects\\WIP\\back_interview\\TestBack\\ContosoUniversity.Core\\ContosoUniversity.Core.csproj": {}
+    "D:\\www\\.NET Fill-Rouge\\ContosoUniversity-login\\ContosoUniversity.Core\\ContosoUniversity.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kklak\\OneDrive\\Documents\\Projects\\WIP\\back_interview\\TestBack\\ContosoUniversity.Core\\ContosoUniversity.Core.csproj": {
+    "D:\\www\\.NET Fill-Rouge\\ContosoUniversity-login\\ContosoUniversity.Core\\ContosoUniversity.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kklak\\OneDrive\\Documents\\Projects\\WIP\\back_interview\\TestBack\\ContosoUniversity.Core\\ContosoUniversity.Core.csproj",
+        "projectUniqueName": "D:\\www\\.NET Fill-Rouge\\ContosoUniversity-login\\ContosoUniversity.Core\\ContosoUniversity.Core.csproj",
         "projectName": "ContosoUniversity.Core",
-        "projectPath": "C:\\Users\\kklak\\OneDrive\\Documents\\Projects\\WIP\\back_interview\\TestBack\\ContosoUniversity.Core\\ContosoUniversity.Core.csproj",
-        "packagesPath": "C:\\Users\\kklak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kklak\\OneDrive\\Documents\\Projects\\WIP\\back_interview\\TestBack\\ContosoUniversity.Core\\obj\\",
+        "projectPath": "D:\\www\\.NET Fill-Rouge\\ContosoUniversity-login\\ContosoUniversity.Core\\ContosoUniversity.Core.csproj",
+        "packagesPath": "C:\\Users\\stanc\\.nuget\\packages\\",
+        "outputPath": "D:\\www\\.NET Fill-Rouge\\ContosoUniversity-login\\ContosoUniversity.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kklak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\stanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -52,13 +52,13 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [

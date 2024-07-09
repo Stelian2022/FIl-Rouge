@@ -1,2 +1,2 @@
 ﻿global using SeedWork;
-global using Interview.Entities;
+global using QuizApp.Entities;
