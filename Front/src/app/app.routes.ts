@@ -13,6 +13,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { DashbordAdminComponent } from './pages/dashbord-admin/dashbord-admin.component';
 import { InscriptionComponent } from './pages/inscription/inscription.component';
 import { DashbordAgenceComponent } from './pages/dashbord-agence/dashbord-agence.component';
+import { AdminDetailComponent } from './pages/profile/profile.component';
+
 
 
 
@@ -28,6 +30,7 @@ export const routes: Routes = [
   { path: 'admin/agencies', component: AgenciesComponent, canActivate: [AuthGuard] },
   { path: 'admin/candidates', component: CandidatesComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
+  { path: 'profile', component: AdminDetailComponent, canActivate: [AuthGuard] },
   { path: 'inscription', component: InscriptionComponent },
   { path: '', redirectTo: '/accueil', pathMatch: 'full' }, // Redirection vers accueil par défaut
   { path: '**', redirectTo: '/accueil' } // Redirection pour toute autre route invalide vers accueil

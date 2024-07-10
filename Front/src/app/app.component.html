@@ -12,7 +12,6 @@
       <a *ngIf="isLoggedIn" (click)="logout(); closeMenu()">Logout</a>
       <a routerLink="/dashbordAdmin" *ngIf="isAdmin" (click)="closeMenu()">Admin</a>
       <a routerLink="/dashbordAgence" *ngIf="isAgency" (click)="closeMenu()">Agence</a>
-      
     </div>
   </nav>
 </header>

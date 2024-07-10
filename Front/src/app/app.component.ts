@@ -9,15 +9,14 @@ import { QuizComponent } from './pages/quiz/quiz.component';
 import { QuestionComponent } from './pages/question/question.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { AdminDetailComponent } from './pages/admin-detail/admin-detail.component';
-// import { AdminModificationComponent } from './pages/admin-modification/admin-modification.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AgenciesComponent } from './pages/admin/agencies/agencies.component';
 import { CandidatesComponent } from './pages/admin/candidates/candidates.component';
 import { DashbordAdminComponent } from './pages/dashbord-admin/dashbord-admin.component';
 import { AppAdminSidebarComponent } from './pages/admin/admin-sidebar/admin-sidebar.component';
+import { AdminDetailComponent } from './pages/profile/profile.component';
 
-import { InscriptionComponent } from './pages/inscription/inscription.component';
+
 
 @Component({
   selector: 'app-root',
@@ -36,10 +35,8 @@ import { InscriptionComponent } from './pages/inscription/inscription.component'
     CandidatesComponent,
     DashbordAdminComponent,
     AppAdminSidebarComponent,
-      // AdminDetailComponent,
-      // AdminModificationComponent,
     LoginComponent,
-    InscriptionComponent
+    AdminDetailComponent,
   ],
 
   templateUrl: './app.component.html',

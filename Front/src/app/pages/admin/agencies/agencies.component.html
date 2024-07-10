@@ -1,16 +1,60 @@
+<div class="flex">
+  <!-- Sidebar -->
+  <div class="sidebar w-1/4 h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-6">
+    <ul>
+      <li><a href="/profile">Gérer le Profil</a></li>
+      <li><a href="/admin/agencies">Agences</a></li>
+      <li><a href="/admin/candidates">Candidats</a></li>
+      <li><a href="/QuizGenerator">Générer un Quiz</a></li>
+      <li><a href="/resultats">Résultats</a></li>
+      <li><a href="/accueil">Déconnexion</a></li>
+    </ul>
+    
+  </div>
+<div class="main-content w-3/4 p-6">
+  <div class="content-wrapper w-full bg-white shadow-lg rounded-lg p-6 mx-auto max-w-4xl">
+    <h1 class="text-3xl font-bold text-center mb-6">Liste des Agences</h1>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-header">
+          <h3>Id-agence: 0</h3>
+          <p>Nom: DIGIWIN</p>
+        </div>
+        <div class="card-actions">
+          <button class="bg-blue-500">Modifier</button>
+          <button class="bg-red-500">Supprimer</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>Id-agence: 1</h3>
+          <p>Nom: KAPPALYS</p>
+        </div>
+        <div class="card-actions">
+          <button class="bg-blue-500">Modifier</button>
+          <button class="bg-red-500">Supprimer</button>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  <div class="content">
+    <h2>Agences</h2>
+    <form (ngSubmit)="createAgency(newAgency)">
+      <!-- Formulaire pour créer une nouvelle agence -->
+      <input [(ngModel)]="newAgency.name" name="name" placeholder="Nom de l'agence" required>
+      <button class="bg-green-500" type="submit">Créer</button>
+    </form>
+    <ul>
+      <li *ngFor="let agency of agencies">
+        {{ agency.name }}
+        <button class="bg-blue-500" (click)="updateAgency(agency.id, agency)">Modifier</button>
+        <button class="bg-red-500" (click)="deleteAgency(agency.id)">Supprimer</button>
+      </li>
+    </ul>
+  </div>
+</div> 
 
-<div class="content">
-  <h2>Agences</h2>
-  <form (ngSubmit)="createAgency(newAgency)">
-    <!-- Formulaire pour créer une nouvelle agence -->
-    <input [(ngModel)]="newAgency.name" name="name" placeholder="Nom de l'agence" required>
-    <button type="submit">Créer</button>
-  </form>
-  <ul>
-    <li *ngFor="let agency of agencies">
-      {{ agency.name }}
-      <button (click)="updateAgency(agency.id, agency)">Modifier</button>
-      <button (click)="deleteAgency(agency.id)">Supprimer</button>
-    </li>
-  </ul>
-</div>
+
+
+

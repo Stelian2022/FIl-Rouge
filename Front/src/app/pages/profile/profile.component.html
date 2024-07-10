@@ -1,0 +1,41 @@
+<div class="flex">
+    <!-- Sidebar -->
+    <div class="sidebar w-1/4 h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-6">
+      <ul>
+        <li><a href="/profile">Gérer le Profil</a></li>
+        <li><a href="/admin/agencies">Agences</a></li>
+        <li><a href="/admin/candidates">Candidats</a></li>
+        <li><a href="/QuizGenerator">Générer un Quiz</a></li>
+        <li><a href="/resultats">Résultats</a></li>
+        <li><a href="/accueil">Déconnexion</a></li>
+      </ul>
+      
+    </div>
+
+<div class="profile-container">
+  <h2>Profil de l'Administrateur</h2>
+  <div *ngFor="let admin of admins" class="admin-profile">
+    <h3>{{ admin.name }}</h3>
+    <p>Email: {{ admin.email }}</p>
+    <p>Rôle: {{ admin.role }}</p>
+    <button (click)="editProfile(admin)">Modifier le profil</button>
+  </div>
+</div>
+
+<div *ngIf="selectedAdmin" class="edit-profile-container">
+  <h2>Modifier le Profil</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label for="name">Nom:</label>
+    <input type="text" id="name" [(ngModel)]="selectedAdmin.name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="selectedAdmin.email" name="email" required>
+    
+    <label for="role">Rôle:</label>
+    <input type="text" id="role" [(ngModel)]="selectedAdmin.role" name="role" required>
+    
+    <button type="submit">Enregistrer</button>
+    <button type="button" (click)="cancelEdit()">Annuler</button>
+  </form>
+</div>
+</div>     
