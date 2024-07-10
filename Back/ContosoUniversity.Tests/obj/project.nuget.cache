@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wSKPDxeSWDI=",
+  "dgSpecHash": "6s/UMUOcVlo=",
   "success": false,
-  "projectFilePath": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\ContosoUniversity.Tests\\QuizApp.Tests.csproj",
+  "projectFilePath": "D:\\www\\FIl-Rouge\\Back\\ContosoUniversity.Tests\\QuizApp.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\stanc\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\stanc\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
@@ -98,8 +98,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Projet 'D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp.Core\\QuizApp.Core.csproj' introuvable. Vérifiez que la référence de projet est valide et que le fichier projet existe.",
-      "libraryId": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp.Core\\QuizApp.Core.csproj",
+      "message": "Projet 'D:\\www\\FIl-Rouge\\Back\\QuizApp.Core\\QuizApp.Core.csproj' introuvable. Vérifiez que la référence de projet est valide et que le fichier projet existe.",
+      "libraryId": "D:\\www\\FIl-Rouge\\Back\\QuizApp.Core\\QuizApp.Core.csproj",
       "targetGraphs": [
         "net8.0"
       ]
@@ -107,8 +107,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Projet 'D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp\\QuizApp.csproj' introuvable. Vérifiez que la référence de projet est valide et que le fichier projet existe.",
-      "libraryId": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp\\QuizApp.csproj",
+      "message": "Projet 'D:\\www\\FIl-Rouge\\Back\\QuizApp\\QuizApp.csproj' introuvable. Vérifiez que la référence de projet est valide et que le fichier projet existe.",
+      "libraryId": "D:\\www\\FIl-Rouge\\Back\\QuizApp\\QuizApp.csproj",
       "targetGraphs": [
         "net8.0"
       ]

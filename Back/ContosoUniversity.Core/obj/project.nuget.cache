@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0ry3nOA73Jk=",
+  "dgSpecHash": "UXrWrboOi/k=",
   "success": true,
-  "projectFilePath": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\ContosoUniversity.Core\\QuizApp.Core.csproj",
+  "projectFilePath": "D:\\www\\FIl-Rouge\\Back\\ContosoUniversity.Core\\QuizApp.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\stanc\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\stanc\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

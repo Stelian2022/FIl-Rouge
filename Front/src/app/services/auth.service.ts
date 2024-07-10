@@ -21,19 +21,24 @@ export class AuthService {
       }
     }
     )}
-    // return new Promise((resolve, reject) => {
-    //   if (username === 'user' && password === 'password') {
-    //     this.isAuthenticated.next(true);
-    //     this.router.navigate(['accueil']).catch(err => {
-    //       console.error('Navigation to home failed!', err);
-    //       reject(err);
-    //     });
-    //     resolve(undefined);
-    //   } else {
-    //     this.isAuthenticated.next(false);
-    //     reject('Invalid username or password');
-    //   }
-    // });
+    registerUser(email: string, password: string): Observable<any> {
+      return new Observable((observer) => {
+        // Simulate registration logic
+        if (email === 'newUser' && password === 'newPassword') {
+          this.isAuthenticated.next(true);
+          this.router.navigate(['accueil']).then(
+            () => observer.next(undefined),
+            (err) => {
+              console.error('Navigation to home failed after registration!', err);
+              observer.error(err);
+            }
+          );
+        } else {
+          this.isAuthenticated.next(false);
+          observer.error('Registration failed');
+        }
+      });
+    }
   
 
   logout(): void {
