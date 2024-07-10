@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "ContosoUniversity.Tests": {
+    "QuizApp.Tests": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

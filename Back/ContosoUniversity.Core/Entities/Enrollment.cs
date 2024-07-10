@@ -1,11 +1,11 @@
-﻿namespace Interview.Entities;
+﻿namespace QuizApp.Entities;
 
 public class Enrollment : Entity
 {
-    public Level? Grade { get; init; }
+    public Grade? Grade { get; init; }
 
-    public Question Course { get; init; } = null!; 
-    public User Student { get; init; } = null!;
+    public Course Course { get; init; } = null!; 
+    public User User { get; init; } = null!;
 }
 
 

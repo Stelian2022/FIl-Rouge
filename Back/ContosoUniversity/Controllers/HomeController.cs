@@ -1,8 +1,8 @@
-using Interview.Models;
+using QuizApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Interview.Controllers
+namespace QuizApp.Controllers
 {
     public class HomeController : Controller
     {

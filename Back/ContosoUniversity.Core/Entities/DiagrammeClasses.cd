@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="ContosoUniversity.Entities.Course">
+  <Class Name="QuizApp.Entities.Course">
     <Position X="1.25" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAAAEAAAAAAAAAAAAAAACABAAAAAAAAAAA=</HashCode>
@@ -10,7 +10,7 @@
       <Property Name="Enrollments" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="ContosoUniversity.Entities.Enrollment">
+  <Class Name="QuizApp.Entities.Enrollment">
     <Position X="5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAAAAAAAIAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
@@ -18,14 +18,14 @@
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Course" />
-      <Property Name="Student" />
+      <Property Name="User" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="ContosoUniversity.Entities.Student">
+  <Class Name="QuizApp.Entities.User">
     <Position X="8.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAEAAAAAAAAAAAAAAAAAAAAAAACABAAAAAAAAAAg=</HashCode>
-      <FileName>Entities\Student.cs</FileName>
+      <FileName>Entities\User.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Enrollments" />
@@ -38,7 +38,7 @@
       <FileName>SeedWork\Entity.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="ContosoUniversity.Entities.Grade">
+  <Enum Name="QuizApp.Entities.Grade">
     <Position X="9.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtAEAAAA=</HashCode>

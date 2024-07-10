@@ -1,2 +1,2 @@
-Add-Migration Interview_V1 -Context InterviewContext -StartupProject Interview -Project Interview.Infrastructure -OutputDir EF\Migrations
+Add-Migration Contoso_V1 -Context SchoolContext -StartupProject QuizApp -Project QuizApp.Infrastructure -OutputDir EF\Migrations
 
