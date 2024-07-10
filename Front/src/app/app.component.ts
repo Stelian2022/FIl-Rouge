@@ -11,6 +11,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AdminDetailComponent } from './pages/admin-detail/admin-detail.component';
 import { AdminModificationComponent } from './pages/admin-modification/admin-modification.component';
+import { LoginComponent } from './pages/login/login.component';
+import { InscriptionComponent } from './pages/inscription/inscription.component';
+
 
 @Component({
   selector: 'app-root',
@@ -26,7 +29,10 @@ import { AdminModificationComponent } from './pages/admin-modification/admin-mod
     QuizComponent,
     QuestionComponent,
     AdminDetailComponent,
-    AdminModificationComponent
+    AdminModificationComponent,
+    LoginComponent,
+  
+
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

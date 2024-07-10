@@ -19,17 +19,19 @@ import { NgIf } from '@angular/common';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  username: string = '';
+  email: string = '';
   password: string = '';
   loginError: boolean = false;
 
   constructor(private authService: AuthService, private router: Router, private userService: UserService) {}
   login(): void {
-    this.authService.login(this.username, this.password).then(() => {
-      this.router.navigate(['/accueil']);
-    }).catch(() => {
+    this.authService.login(this.email, this.password).subscribe({
+      next: () => {
+        this.router.navigate(['/accueil']);
+      },
+      error: () => {
         this.loginError = true;
       }
-    );
+    });
   }
 }

@@ -6,23 +6,39 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-
   private isAuthenticated = new BehaviorSubject<boolean>(false);
 
   constructor(private router: Router) { } // Inject HttpClient
 
-  login(username: string, password: string): Promise<any> {
-    return new Promise((resolve, reject) => {
-      if (username === 'user' && password === 'password') {
+  login(email: string, password: string): Observable<any> {
+    return new Observable((observer) => {
+      if (email === 'user' && password === 'password') {
         this.isAuthenticated.next(true);
         this.router.navigate(['accueil']).catch(err => {
           console.error('Navigation to home failed!', err);
-          reject(err);
+          observer.error(err);
         });
-        resolve(undefined);
+        observer.next(undefined);
       } else {
         this.isAuthenticated.next(false);
-        reject('Invalid username or password');
+        observer.error('Invalid email or password');
+      }
+    });
+  }
+
+  registerUser(email: string, password: string): Observable<any> {
+    return new Observable((observer) => {
+      // Assuming registration logic is similar to login for simplicity
+      if (email === 'newUser' && password === 'newPassword') {
+        this.isAuthenticated.next(true);
+        this.router.navigate(['accueil']).catch(err => {
+          console.error('Navigation to home failed after registration!', err);
+          observer.error(err);
+        });
+        observer.next(undefined);
+      } else {
+        this.isAuthenticated.next(false);
+        observer.error('Registration failed');
       }
     });
   }

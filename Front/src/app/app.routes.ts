@@ -10,6 +10,9 @@ import { AgenciesComponent } from './pages/admin/agencies/agencies.component';
 import { CandidatesComponent } from './pages/admin/candidates/candidates.component';
 import { AuthGuard } from './auth.guard';
 import { LoginComponent } from './pages/login/login.component';
+import { DashbordAdminComponent } from './pages/dashbord-admin/dashbord-admin.component';
+import { InscriptionComponent } from './pages/inscription/inscription.component';
+
 
 export const routes: Routes = [
   { path: 'apropos', component: AproposComponent },
@@ -18,9 +21,12 @@ export const routes: Routes = [
   { path: 'quiz', component: QuizComponent },
   { path: 'quiz/:id', component: QuestionComponent },
   { path: 'users', component: UserListComponent },
+  { path: 'dashbordAdmin', component: DashbordAdminComponent, canActivate: [AuthGuard] },
   { path: 'admin/agencies', component: AgenciesComponent, canActivate: [AuthGuard] },
   { path: 'admin/candidates', component: CandidatesComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
+  { path: 'inscription', component: InscriptionComponent},
+
   { path: '', redirectTo: '/accueil', pathMatch: 'full' }, // Redirection vers accueil par défaut
   { path: '**', redirectTo: '/accueil' } // Redirection pour toute autre route invalide vers accueil
 ];

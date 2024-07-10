@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './dashbord-admin.component.html',
-  styleUrl: './dashbord-admin.component.scss'
+  styleUrl: './dashbord-admin.component.css'
 })
 export class DashbordAdminComponent implements OnInit {
   admins: User[] = [];
