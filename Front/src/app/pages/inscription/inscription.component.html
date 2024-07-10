@@ -1,0 +1,36 @@
+<form [formGroup]="inscriptionForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="username">Nom d'utilisateur</label>
+    <input id="username" formControlName="username" type="text">
+    <div *ngIf="inscriptionForm.controls['username'].invalid && (inscriptionForm.controls['username'].dirty || inscriptionForm.controls['username'].touched)">
+      <div *ngIf="inscriptionForm.controls['username'].errors?.['required']">
+        Nom d'utilisateur est requis.
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input id="email" formControlName="email" type="email">
+    <div *ngIf="inscriptionForm.controls['email'].invalid && (inscriptionForm.controls['email'].dirty || inscriptionForm.controls['email'].touched)">
+      <div *ngIf="inscriptionForm.controls['email'].errors?.['required']">
+        Email est requis.
+      </div>
+      <div *ngIf="inscriptionForm.controls['email'].errors?.['email']">
+        Email n'est pas valide.
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="password">Mot de passe</label>
+    <input id="password" formControlName="password" type="password">
+    <div *ngIf="inscriptionForm.controls['password'].invalid && (inscriptionForm.controls['password'].dirty || inscriptionForm.controls['password'].touched)">
+      <div *ngIf="inscriptionForm.controls['password'].errors?.['required']">
+        Mot de passe est requis.
+      </div>
+      <div *ngIf="inscriptionForm.controls['password'].errors?.['minlength']">
+        Mot de passe doit avoir au moins 6 caractères.
+      </div>
+    </div>
+  </div>
+  <button type="submit" [disabled]="!inscriptionForm.valid">S'inscrire</button>
+</form>
