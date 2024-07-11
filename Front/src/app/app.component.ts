@@ -16,6 +16,7 @@ import { DashbordAdminComponent } from './pages/dashbord-admin/dashbord-admin.co
 import { AppAdminSidebarComponent } from './pages/admin/admin-sidebar/admin-sidebar.component';
 import { AdminDetailComponent } from './pages/profile/profile.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -39,7 +40,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     AppAdminSidebarComponent,
     LoginComponent,
     AdminDetailComponent,
-    NavBarComponent 
+    NavBarComponent,
+    FooterComponent
   ],
 
   templateUrl: './app.component.html',
