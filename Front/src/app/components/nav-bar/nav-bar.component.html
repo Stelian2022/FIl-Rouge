@@ -1,0 +1,16 @@
+<!-- src/app/nav-bar/nav-bar.component.html -->
+<nav>
+    <div class="menu-burger" (click)="toggleMenu()">&#9776;</div>
+    <div class="menu-items" [ngClass]="{'active': isMenuOpen}">
+      <button class="close-menu" (click)="toggleMenu()">✕</button>
+  
+      <a routerLink="/" (click)="closeMenu()">Accueil</a>
+      <a routerLink="/apropos" (click)="closeMenu()">A propos</a>
+      <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+      <a routerLink="/login" *ngIf="!isLoggedIn" (click)="closeMenu()">Se connecter</a>
+      <a *ngIf="isLoggedIn" (click)="logout(); closeMenu()">Logout</a>
+      <a routerLink="/dashbordAdmin" *ngIf="isLoggedIn && isAdmin" (click)="closeMenu()">Admin</a>
+      <a routerLink="/dashbordAgence" *ngIf="isLoggedIn && isAgency" (click)="closeMenu()">Agence</a>
+    </div>
+  </nav>
+  

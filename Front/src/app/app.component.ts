@@ -15,6 +15,8 @@ import { CandidatesComponent } from './pages/admin/candidates/candidates.compone
 import { DashbordAdminComponent } from './pages/dashbord-admin/dashbord-admin.component';
 import { AppAdminSidebarComponent } from './pages/admin/admin-sidebar/admin-sidebar.component';
 import { AdminDetailComponent } from './pages/profile/profile.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+
 
 
 
@@ -37,6 +39,7 @@ import { AdminDetailComponent } from './pages/profile/profile.component';
     AppAdminSidebarComponent,
     LoginComponent,
     AdminDetailComponent,
+    NavBarComponent 
   ],
 
   templateUrl: './app.component.html',
@@ -49,7 +52,8 @@ export class AppComponent {
   isAgency = true; // Exemple : Est agence
   isMenuOpen = false; // Pour contrôler l'état du menu
   
-  
+
+
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;

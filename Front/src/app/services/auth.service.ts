@@ -8,6 +8,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
+ 
 
   private isAuthenticated = new BehaviorSubject<boolean>(false);
 
@@ -39,17 +40,19 @@ export class AuthService {
         }
       });
     }
+    getUserRole(): string {
+      return localStorage.getItem('userRole') || '';
+    }
+
+
+    logout(): void {
+      localStorage.removeItem('token');
+      localStorage.removeItem('userRole');
+    }
   
 
-  logout(): void {
-    this.isAuthenticated.next(false);
-    this.router.navigate(['login']).catch(err => {
-      console.error('Navigation to login failed!', err);
-    });
-  }
-
-  isLoggedIn(): Observable<boolean> {
-    return this.isAuthenticated.asObservable();
+  isLoggedIn(): boolean {
+    return !!localStorage.getItem('token');
   }
 }
 
