@@ -1,5 +1,8 @@
 <header>
-  <h1>{{ title }}</h1>
+  <div class="title-container">
+    <img src="./favicon.ico" alt="Favicon" class="title-icon">
+    <h1>{{ title }}</h1>
+  </div>
   <nav>
     <div class="menu-burger" (click)="toggleMenu()">&#9776;</div>
     <div class="menu-items" [ngClass]="{'active': isMenuOpen}">
