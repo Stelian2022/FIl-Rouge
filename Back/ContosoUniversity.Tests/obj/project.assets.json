@@ -5511,8 +5511,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp.Core\\QuizApp.Core.csproj",
-      "D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp\\QuizApp.csproj",
+      "D:\\www\\FIl-Rouge\\Back\\QuizApp.Core\\QuizApp.Core.csproj",
+      "D:\\www\\FIl-Rouge\\Back\\QuizApp\\QuizApp.csproj",
       "Microsoft.NET.Test.Sdk >= 17.6.0",
       "coverlet.collector >= 6.0.0",
       "xunit >= 2.4.2",
@@ -5526,11 +5526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\ContosoUniversity.Tests\\QuizApp.Tests.csproj",
+      "projectUniqueName": "D:\\www\\FIl-Rouge\\Back\\ContosoUniversity.Tests\\QuizApp.Tests.csproj",
       "projectName": "QuizApp.Tests",
-      "projectPath": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\ContosoUniversity.Tests\\QuizApp.Tests.csproj",
+      "projectPath": "D:\\www\\FIl-Rouge\\Back\\ContosoUniversity.Tests\\QuizApp.Tests.csproj",
       "packagesPath": "C:\\Users\\stanc\\.nuget\\packages\\",
-      "outputPath": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\ContosoUniversity.Tests\\obj\\",
+      "outputPath": "D:\\www\\FIl-Rouge\\Back\\ContosoUniversity.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5552,11 +5552,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp.Core\\QuizApp.Core.csproj": {
-              "projectPath": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp.Core\\QuizApp.Core.csproj"
+            "D:\\www\\FIl-Rouge\\Back\\QuizApp.Core\\QuizApp.Core.csproj": {
+              "projectPath": "D:\\www\\FIl-Rouge\\Back\\QuizApp.Core\\QuizApp.Core.csproj"
             },
-            "D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp\\QuizApp.csproj": {
-              "projectPath": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp\\QuizApp.csproj"
+            "D:\\www\\FIl-Rouge\\Back\\QuizApp\\QuizApp.csproj": {
+              "projectPath": "D:\\www\\FIl-Rouge\\Back\\QuizApp\\QuizApp.csproj"
             }
           }
         }
@@ -5624,8 +5624,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Projet 'D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp.Core\\QuizApp.Core.csproj' introuvable. Vérifiez que la référence de projet est valide et que le fichier projet existe.",
-      "libraryId": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp.Core\\QuizApp.Core.csproj",
+      "message": "Projet 'D:\\www\\FIl-Rouge\\Back\\QuizApp.Core\\QuizApp.Core.csproj' introuvable. Vérifiez que la référence de projet est valide et que le fichier projet existe.",
+      "libraryId": "D:\\www\\FIl-Rouge\\Back\\QuizApp.Core\\QuizApp.Core.csproj",
       "targetGraphs": [
         "net8.0"
       ]
@@ -5633,8 +5633,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Projet 'D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp\\QuizApp.csproj' introuvable. Vérifiez que la référence de projet est valide et que le fichier projet existe.",
-      "libraryId": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\QuizApp\\QuizApp.csproj",
+      "message": "Projet 'D:\\www\\FIl-Rouge\\Back\\QuizApp\\QuizApp.csproj' introuvable. Vérifiez que la référence de projet est valide et que le fichier projet existe.",
+      "libraryId": "D:\\www\\FIl-Rouge\\Back\\QuizApp\\QuizApp.csproj",
       "targetGraphs": [
         "net8.0"
       ]

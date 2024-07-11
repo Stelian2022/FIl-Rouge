@@ -9,10 +9,13 @@ import { QuizComponent } from './pages/quiz/quiz.component';
 import { QuestionComponent } from './pages/question/question.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AdminDetailComponent } from './pages/admin-detail/admin-detail.component';
-import { AdminModificationComponent } from './pages/admin-modification/admin-modification.component';
 import { LoginComponent } from './pages/login/login.component';
-import { InscriptionComponent } from './pages/inscription/inscription.component';
+import { AgenciesComponent } from './pages/admin/agencies/agencies.component';
+import { CandidatesComponent } from './pages/admin/candidates/candidates.component';
+import { DashbordAdminComponent } from './pages/dashbord-admin/dashbord-admin.component';
+import { AppAdminSidebarComponent } from './pages/admin/admin-sidebar/admin-sidebar.component';
+import { AdminDetailComponent } from './pages/profile/profile.component';
+
 
 
 @Component({
@@ -28,12 +31,14 @@ import { InscriptionComponent } from './pages/inscription/inscription.component'
     HttpClientModule,
     QuizComponent,
     QuestionComponent,
-    AdminDetailComponent,
-    AdminModificationComponent,
+    AgenciesComponent,
+    CandidatesComponent,
+    DashbordAdminComponent,
+    AppAdminSidebarComponent,
     LoginComponent,
-  
-
+    AdminDetailComponent,
   ],
+
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -43,21 +48,23 @@ export class AppComponent {
   isAdmin = true; // Exemple : Est admin
   isAgency = true; // Exemple : Est agence
   isMenuOpen = false; // Pour contrôler l'état du menu
+  
+  
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
   closeMenu() {
     this.isMenuOpen = false;
   }
 
-  toggleMenu() {
-    const menuItems = document.querySelector('.menu-items');
-    
-    if (menuItems) {
-      menuItems.classList.toggle('active');
-    }
+  logout() {
+    // Actions de déconnexion ici
+    this.isLoggedIn = false;
+    // Exemple de redirection vers la page d'accueil après la déconnexion
+
   }
-logout() {
-throw new Error('Method not implemented.');
 }
 
-}
 

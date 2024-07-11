@@ -9472,11 +9472,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\ContosoUniversity\\QuizApp.csproj",
+      "projectUniqueName": "D:\\www\\FIl-Rouge\\Back\\ContosoUniversity\\QuizApp.csproj",
       "projectName": "QuizApp",
-      "projectPath": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\ContosoUniversity\\QuizApp.csproj",
+      "projectPath": "D:\\www\\FIl-Rouge\\Back\\ContosoUniversity\\QuizApp.csproj",
       "packagesPath": "C:\\Users\\stanc\\.nuget\\packages\\",
-      "outputPath": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\ContosoUniversity\\obj\\",
+      "outputPath": "D:\\www\\FIl-Rouge\\Back\\ContosoUniversity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9498,8 +9498,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\www\\FIl-Rouge\\Back-QuizzApp\\ContosoUniversity.Core\\QuizApp.Core.csproj": {
-              "projectPath": "D:\\www\\FIl-Rouge\\Back-QuizzApp\\ContosoUniversity.Core\\QuizApp.Core.csproj"
+            "D:\\www\\FIl-Rouge\\Back\\ContosoUniversity.Core\\QuizApp.Core.csproj": {
+              "projectPath": "D:\\www\\FIl-Rouge\\Back\\ContosoUniversity.Core\\QuizApp.Core.csproj"
             }
           }
         }

@@ -1,36 +1,40 @@
-<form [formGroup]="inscriptionForm" (ngSubmit)="onSubmit()">
-  <div>
-    <label for="username">Nom d'utilisateur</label>
-    <input id="username" formControlName="username" type="text">
-    <div *ngIf="inscriptionForm.controls['username'].invalid && (inscriptionForm.controls['username'].dirty || inscriptionForm.controls['username'].touched)">
-      <div *ngIf="inscriptionForm.controls['username'].errors?.['required']">
-        Nom d'utilisateur est requis.
+<div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 pt-10">
+  <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-8">
+<form [formGroup]="inscriptionForm" (ngSubmit)="onSubmit()" class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+    <div class="mb-4">
+      <label for="username" class="block text-gray-700 font-bold mb-2">Nom d'utilisateur</label>
+      <input id="username" formControlName="username" type="text" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <div *ngIf="inscriptionForm.controls['username'].invalid && (inscriptionForm.controls['username'].dirty || inscriptionForm.controls['username'].touched)" class="text-red-500 text-sm mt-1">
+        <div *ngIf="inscriptionForm.controls['username'].errors?.['required']">
+          Nom d'utilisateur est requis.
+        </div>
       </div>
     </div>
-  </div>
-  <div>
-    <label for="email">Email</label>
-    <input id="email" formControlName="email" type="email">
-    <div *ngIf="inscriptionForm.controls['email'].invalid && (inscriptionForm.controls['email'].dirty || inscriptionForm.controls['email'].touched)">
-      <div *ngIf="inscriptionForm.controls['email'].errors?.['required']">
-        Email est requis.
-      </div>
-      <div *ngIf="inscriptionForm.controls['email'].errors?.['email']">
-        Email n'est pas valide.
-      </div>
-    </div>
-  </div>
-  <div>
-    <label for="password">Mot de passe</label>
-    <input id="password" formControlName="password" type="password">
-    <div *ngIf="inscriptionForm.controls['password'].invalid && (inscriptionForm.controls['password'].dirty || inscriptionForm.controls['password'].touched)">
-      <div *ngIf="inscriptionForm.controls['password'].errors?.['required']">
-        Mot de passe est requis.
-      </div>
-      <div *ngIf="inscriptionForm.controls['password'].errors?.['minlength']">
-        Mot de passe doit avoir au moins 6 caractères.
+    <div class="mb-4">
+      <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+      <input id="email" formControlName="email" type="email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <div *ngIf="inscriptionForm.controls['email'].invalid && (inscriptionForm.controls['email'].dirty || inscriptionForm.controls['email'].touched)" class="text-red-500 text-sm mt-1">
+        <div *ngIf="inscriptionForm.controls['email'].errors?.['required']">
+          Email est requis.
+        </div>
+        <div *ngIf="inscriptionForm.controls['email'].errors?.['email']">
+          Email n'est pas valide.
+        </div>
       </div>
     </div>
-  </div>
-  <button type="submit" [disabled]="!inscriptionForm.valid">S'inscrire</button>
-</form>
+    <div class="mb-4">
+      <label for="password" class="block text-gray-700 font-bold mb-2">Mot de passe</label>
+      <input id="password" formControlName="password" type="password" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <div *ngIf="inscriptionForm.controls['password'].invalid && (inscriptionForm.controls['password'].dirty || inscriptionForm.controls['password'].touched)" class="text-red-500 text-sm mt-1">
+        <div *ngIf="inscriptionForm.controls['password'].errors?.['required']">
+          Mot de passe est requis.
+        </div>
+        <div *ngIf="inscriptionForm.controls['password'].errors?.['minlength']">
+          Mot de passe doit avoir au moins 6 caractères.
+        </div>
+      </div>
+    </div>
+    <button type="submit" [disabled]="!inscriptionForm.valid" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">S'inscrire</button>
+  </form>
+</div>
+</div>

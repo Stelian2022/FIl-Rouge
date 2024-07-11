@@ -1,55 +1,20 @@
 <div class="flex">
   <!-- Sidebar -->
-  <div class="w-1/4 h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-6">
-    <h2 class="text-2xl font-bold mb-6">Menu</h2>
+  <div class="sidebar w-1/4 h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-6">
     <ul>
-      <li class="mb-4">
-        <a href="/profile" class="block py-2 px-4 rounded hover:bg-purple-500 transition duration-300">Gérer le Profil</a>
-      </li>
-
-      <li class="mb-4">
-        <a href="/Agences" class="block py-2 px-4 rounded hover:bg-purple-500 transition duration-300">Liste des Agences</a>
-      </li>
-      
-      <li class="mb-4">
-        <a href="/Candidats" class="block py-2 px-4 rounded hover:bg-purple-500 transition duration-300">Liste des Candidats</a>
-      </li>
-
-      <li class="mb-4">
-        <a href="/QuizGenerator" class="block py-2 px-4 rounded hover:bg-purple-500 transition duration-300">Générer un Quiz</a>
-      </li>
-      <li class="mb-4">
-        <a href="/resultats" class="block py-2 px-4 rounded hover:bg-purple-500 transition duration-300">Rézultats</a>
-      </li>
-      <li class="mb-4">
-        <a href="/accueil" class="block py-2 px-4 rounded hover:bg-purple-500 transition duration-300">Déconnexion</a>
-      </li>
+      <li><a href="/profile">Gérer le Profil</a></li>
+      <li><a href="/admin/agencies">Agences</a></li>
+      <li><a href="/admin/candidates">Candidats</a></li>
+      <li><a href="/quiz">Générer un Quiz</a></li>
+      <li><a href="/resultats">Résultats</a></li>
+      <li><a href="/accueil">Déconnexion</a></li>
     </ul>
+    
   </div>
 
-  <!-- Main Content -->
-  <div class="w-3/4 bg-white shadow-lg rounded-lg p-6 mt-16 mx-auto max-w-4xl">
-    <h1 class="text-3xl font-bold text-center mb-6">Bienvenue sur le dashboard admin</h1>
-    <table class="min-w-full bg-white">
-      <thead>
-        <tr class="w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white">
-          <th class="py-3 px-4 text-left">Id-admin</th>
-          <th class="py-3 px-4 text-left">Nom</th>
-          <th class="py-3 px-4 text-left">Opération</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="border-b hover:bg-gray-100" *ngFor="let admin of admins">
-          <td class="admin-id py-3 px-4">{{admin.id}}</td>
-          <td class="admin-nom py-3 px-4">{{admin.firstName}} {{admin.lastName}}</td>
-          <td class="admin-operation py-3 px-4">
-            <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">Détail</button>
-            <span class="mx-2"></span>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">Modifier</button>
-            <span class="mx-2"></span>
-            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">Supprimer</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+
+<div class="main-content w-3/4 p-6">
+  <div class="content-wrapper w-full bg-white shadow-lg rounded-lg p-6 mx-auto max-w-4xl">
+    <h1 class="text-3xl font-bold text-center mb-6">Bienvenue sur la page Admin</h1>
   </div>
+</div>

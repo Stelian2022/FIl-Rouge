@@ -30,7 +30,7 @@ export class InscriptionComponent {
           console.log('Inscription réussie !');
         },
         (error: any) => {
-          console.error('Erreur lors de l\'inscription : ', error);
+          console.error("Erreur lors de l'inscription : ", error);
         }
       );
     } else {
