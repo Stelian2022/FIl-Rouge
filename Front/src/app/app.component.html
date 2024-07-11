@@ -1,32 +1,12 @@
-<header>
-  <div class="title-container">
-    <img src="./favicon.ico" alt="Favicon" class="title-icon">
-    <h1>{{ title }}</h1>
-  </div>
-  <nav>
-    <div class="menu-burger" (click)="toggleMenu()">&#9776;</div>
-    <div class="menu-items" [ngClass]="{'active': isMenuOpen}">
-      <button class="close-menu" (click)="toggleMenu()">✕</button>
 
-      <a routerLink="/" (click)="closeMenu()">Accueil</a>
-      <a routerLink="/apropos" (click)="closeMenu()">A propos</a>
-      <a routerLink="/contact" (click)="closeMenu()">Contact</a>
-      <a routerLink="/login" *ngIf="!isLoggedIn" (click)="closeMenu()">Se connecter</a>
-      <a *ngIf="isLoggedIn" (click)="logout(); closeMenu()">Logout</a>
-      <a routerLink="/dashbordAdmin" *ngIf="isAdmin" (click)="closeMenu()">Admin</a>
-      <a routerLink="/dashbordAgence" *ngIf="isAgency" (click)="closeMenu()">Agence</a>
-    </div>
-  </nav>
+<header>
+  <h1>{{ title }}</h1>
+  <img src="./favicon.ico" alt="Favicon" class="title-icon">
+  <app-nav-bar></app-nav-bar>
 </header>
 <main>
- 
 </main>
 <router-outlet></router-outlet>
-<footer>
-  <div class="social-links">
-    <a href="https://github.com/Stelian2022" target="_blank">GitHub</a>
-    |
-    <a href="https://www.linkedin.com/in/stelian-constantin-stanciu" target="_blank">LinkedIn</a>
-  </div>
-  <p>&copy; 2024 Web School. Tous droits réservés.</p>
-</footer>
+<app-footer></app-footer>
+
+
