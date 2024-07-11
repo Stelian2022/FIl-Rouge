@@ -121,3 +121,14 @@ main p {
   }
 }
 
+/* Title icon et Title Styles */
+.title-container {
+  display: inline-flex;
+  align-items: center;
+}
+/* Title icon Style */
+.title-icon {
+  width: 3em;
+  height: 3em;
+  margin-right: 8px;
+}
