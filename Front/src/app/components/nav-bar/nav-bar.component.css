@@ -54,6 +54,7 @@ body {
     font-size: 24px;
     cursor: pointer;
     color: #333;
+
   }
   
   nav a {
@@ -68,6 +69,10 @@ body {
     background-color: black; /* Couleur plus foncée au survol */
     color: #fff;
   }
+  .menu-items .close-menu {
+    display: none;
+  
+    }
 
   /* Responsive Styles */
 @media (max-width: 768px) {
@@ -97,5 +102,9 @@ body {
     .menu-items.active {
       transform: translateY(0%);
     }
+    .menu-items .close-menu {
+      display: block;
+    
+      }
   }
   

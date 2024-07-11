@@ -9,8 +9,8 @@
       <a routerLink="/contact" (click)="closeMenu()">Contact</a>
       <a routerLink="/login" *ngIf="!isLoggedIn" (click)="closeMenu()">Se connecter</a>
       <a *ngIf="isLoggedIn" (click)="logout(); closeMenu()">Logout</a>
-      <a routerLink="/dashbordAdmin" *ngIf="isLoggedIn && isAdmin" (click)="closeMenu()">Admin</a>
-      <a routerLink="/dashbordAgence" *ngIf="isLoggedIn && isAgency" (click)="closeMenu()">Agence</a>
+      <a routerLink="/dashbordAdmin" *ngIf="isLoggedIn && isAdmin" (click)="closeMenu()">Profile Admin</a>
+      <a routerLink="/dashbordAgence" *ngIf="isLoggedIn && isAgency" (click)="closeMenu()">Profile Agence</a>
     </div>
   </nav>
   
