@@ -41,3 +41,11 @@
   transform: translateY(-50%);
   color: #cbd5e0; /* Gray color */
 }
+
+.key-icon{
+  position: absolute;
+  left: 0.75rem; /* Adjust left position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #cbd5e0; /* Gray color */
+}
