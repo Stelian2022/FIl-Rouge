@@ -1,0 +1,35 @@
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-container div {
+    margin-bottom: 1em;
+  }
+  
+  .login-container label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 0.5em;
+  }
+  
+  .error {
+    color: red;
+  }
+ .flex-col{
+  min-height: 70vh;
+ }
+ .input-container {
+  position: relative;
+}
+
+.input-container input {
+  padding-left: 2.5rem; /* Adjust padding to make room for the icon */
+}

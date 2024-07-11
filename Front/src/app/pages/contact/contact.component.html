@@ -1,17 +1,25 @@
-<div class="w-full bg-[#ebf3ff] shadow-md rounded-lg p-6 mt-16 mx-auto max-w-4xl">
+<div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 pt-10">
+  <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-8">
     <h2 class="text-2xl font-bold mb-4 text-center">Contactez-nous</h2>
-    <form (submit)="submitForm()" class=" rounded px-8 pt-6 pb-8 mb-4">
+    <form (submit)="submitForm()" class="rounded px-8 pt-6 pb-8 mb-4">
       <div class="mb-4">
         <label for="name" class="block text-gray-700">Nom</label>
-        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        <div class="input-container">
+          <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        </div>
       </div>
       <div class="mb-4">
         <label for="email" class="block text-gray-700">Email</label>
-        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        <div class="input-container">
+          <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+          <span class="email-icon"></span>
+        </div>
       </div>
       <div class="mb-4">
         <label for="message" class="block text-gray-700">Message</label>
-        <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="4" required></textarea>
+        <div class="input-container">
+          <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="4" required></textarea>
+        </div>
       </div>
       <div class="flex items-center justify-center">
         <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">

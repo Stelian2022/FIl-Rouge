@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   standalone: true,
   imports: [],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.css'
 })
 export class ContactComponent {
   formData: any = {};
