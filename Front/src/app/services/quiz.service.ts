@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Quiz } from '../models/quiz.model';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +10,7 @@ import { Quiz } from '../models/quiz.model';
 export class QuizService {
 
   private quizzes: Quiz[] = [];
+  private apiUrl = 'https://localhost:4200//api/quizzes'; // ajouter l'API end point'
   
   constructor() {
     this.loadQuizzes();
@@ -14,13 +18,14 @@ export class QuizService {
 
   private loadQuizzes() {
     const savedQuizzes = localStorage.getItem('quizzes');
+//    let i = 1;
     if (savedQuizzes) {
       this.quizzes = JSON.parse(savedQuizzes);
     } else {
       this.quizzes = [
         {
           id: 1,
-          title: 'Quiz 01/40',
+          title: `Quiz 1/40`,
           questions: [
             { 
               id: 1, 
