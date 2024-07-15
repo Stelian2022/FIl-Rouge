@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\www\\Back\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{350423C7-5A1E-40EE-828A-29D27313232F}|ContosoUniversity.Core\\Interview.Core.csproj|d:\\www\\back\\contosouniversity.core\\entities\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350423C7-5A1E-40EE-828A-29D27313232F}|ContosoUniversity.Core\\Interview.Core.csproj|solutionrelative:contosouniversity.core\\entities\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4DFE43-E396-4D9A-811D-E9A01EA9BEC8}|ContosoUniversity\\Interview.csproj|d:\\www\\back\\contosouniversity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E4DFE43-E396-4D9A-811D-E9A01EA9BEC8}|ContosoUniversity\\Interview.csproj|solutionrelative:contosouniversity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Quiz.cs",
+              "DocumentMoniker": "D:\\www\\Back\\ContosoUniversity.Core\\Entities\\Quiz.cs",
+              "RelativeDocumentMoniker": "ContosoUniversity.Core\\Entities\\Quiz.cs",
+              "ToolTip": "D:\\www\\Back\\ContosoUniversity.Core\\Entities\\Quiz.cs",
+              "RelativeToolTip": "ContosoUniversity.Core\\Entities\\Quiz.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T08:08:01.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\www\\Back\\ContosoUniversity\\appsettings.json",
+              "RelativeDocumentMoniker": "ContosoUniversity\\appsettings.json",
+              "ToolTip": "D:\\www\\Back\\ContosoUniversity\\appsettings.json",
+              "RelativeToolTip": "ContosoUniversity\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-12T08:00:02.451Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
