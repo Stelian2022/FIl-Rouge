@@ -1,2 +1,0 @@
-Add-Migration Contoso_V1 -Context SchoolContext -StartupProject QuizApp -Project QuizApp.Infrastructure -OutputDir EF\Migrations
-
