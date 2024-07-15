@@ -1,2 +1,0 @@
-Add-Migration Interview_V1 -Context InterviewContext -StartupProject Interview -Project Interview.Infrastructure -OutputDir EF\Migrations
-
