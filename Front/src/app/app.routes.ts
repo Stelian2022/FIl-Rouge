@@ -14,6 +14,7 @@ import { DashbordAdminComponent } from './pages/dashbord-admin/dashbord-admin.co
 import { InscriptionComponent } from './pages/inscription/inscription.component';
 import { DashbordAgenceComponent } from './pages/dashbord-agence/dashbord-agence.component';
 import { AdminDetailComponent } from './pages/profile/profile.component';
+import { QuizCompletionComponent } from './pages/quiz-completion/quiz-completion.component';
 
 
 
@@ -35,6 +36,7 @@ export const routes: Routes = [
   { path: 'profile', component: AdminDetailComponent, canActivate: [AuthGuard] },
   { path: 'inscription', component: InscriptionComponent },
   { path: '', redirectTo: '/accueil', pathMatch: 'full' }, // Redirection vers accueil par défaut
-  { path: '**', redirectTo: '/accueil' } // Redirection pour toute autre route invalide vers accueil
+  { path: '**', redirectTo: '/accueil' }, // Redirection pour toute autre route invalide vers accueil
+  { path: 'quiz-completion', component: QuizCompletionComponent }
 ];
 
