@@ -4,8 +4,8 @@
       <h2 class="text-center text-2xl font-bold mb-6 text-gray-800">Login</h2>
       <div class="mb-4 input-container">
         <input class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="email" type="text" placeholder="Email"
-              [(ngModel)]="email" name="email" required>
+              id="username" type="text" placeholder="Email"
+              [(ngModel)]="username" name="username" required>
         <i class="fas fa-envelope email-icon"></i>
       </div>
       
@@ -21,7 +21,7 @@
       </div>
       <div class="flex items-center justify-center">
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:scale-105"
-                type="submit">
+                type="submit" (click)="onSubmit()">
           Se connecter
         </button>
       </div>
